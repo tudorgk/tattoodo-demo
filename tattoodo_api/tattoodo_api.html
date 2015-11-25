@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://tattoodo-news.readme.io/docs/newsadd_post -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="https://www.facebook.com/2008/fbml" itemscope="itemscope" itemtype="http://schema.org/Product" ng-app="hub" class="ng-scope"><head prefix="og: http://ogp.me/ns# nodejsexpressdemo: http://ogp.me/ns/apps/nodejsexpressdemo#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}</style><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>/app_data · Tattoodo News API</title><meta name="description" content="Tattoodo News API was created using ReadMe.io"><link href="https://tattoodo-news.readme.io/favicon.ico" rel="shortcut icon" type="image/x-icon"><meta property="og:title" content="/app_data · Tattoodo News API"><meta property="og:description" content="Tattoodo News API was created using ReadMe.io"><meta property="og:url" content="http://tattoodo-news.readme.io/docs/newsadd_post"><meta property="og:image" content="https://www.filepicker.io/api/file/NSHjtz4SXWiUbavJPTpw"><meta property="og:site_name" content="Tattoodo News API"><meta id="config-proxy-url" content="https://proxy.readme.io/proxy"><link rel="canonical" href="./Tattoodo_api_files/Tattoodo_api.html"><link rel="alternate" type="application/rss+xml" title="RSS Feed for Tattoodo News API" href="https://tattoodo-news.readme.io/blog.rss"><!-- Application styles--><link rel="stylesheet" href="./Tattoodo_api_files/bundle-hub.css"><!--if lt IE 9script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+--><script src="./Tattoodo_api_files/javascript.js"></script><script src="./Tattoodo_api_files/shell.js"></script><script async="" src="./Tattoodo_api_files/analytics.js"></script><script>var is_hub = true;
+var is_hub_edit = false;
+</script><script src="./Tattoodo_api_files/bundle-hub.js"></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-52479696-1', 'auto');
+ga('send', 'pageview');
+</script><link href="./Tattoodo_api_files/css" rel="stylesheet" type="text/css"><style>.theme-line header {  border-bottom-color: #3f3f3f;}.theme-line header a.btn {  background-color: #3f3f3f;}.theme-line header a.btn:hover {  background-color: #0c0c0c;}.theme-line header .navbar-nav a:hover ,.theme-line header .navbar-nav .open > a {  color: #3f3f3f;}.theme-line header .navbar-nav .tt-cursor {  background-color: #3f3f3f;}.theme-line .navbar-nav .active a {  font-weight: bold;  color: #b40909;}.theme-line .navbar-nav .active a:hover {  color: #530404;}.theme-line .main-links .links a:hover {  color: #b40909;}.theme-line .main-content a {  color: #b40909;}.theme-line .main-content a:hover {  color: #530404;}.theme-line .sidebar-nav ul li a.active:before {  background-color: #b40909;}.theme-line .sidebar-nav ul li a.active {  color: #b40909;}.theme-line .sidebar-nav ul li a:hover,.theme-line .sidebar-nav ul li a.active:hover {  color: #530404;}.theme-line .btn-primary {  background-color: #b40909;}.theme-line .btn-primary:hover {  background-color: #530404;}.theme-line .main-content .nav-horizontal a.active {  border-color: #b40909;  color: #b40909;}.theme-line .main-content .nav-horizontal a:hover {  color: #530404;}.theme-line .main-content .nav-horizontal a.active:hover {  border-color: #530404;}.theme-line header .navbar-nav a.active ,.theme-line #versions-list li a:hover strong,.theme-line #versions-list li a.active .current,.theme-line #versions-list li a:active .current {  color: #b40909;}.theme-line.body-threes .section-right .threes-nav .btn-default:hover,.theme-line.page-docs.body-threes .section-right .threes-nav .pull-right a:hover {  color: #b40909;  border-color: #b40909;}.theme-solid header {  background-color: #3f3f3f;}.theme-solid.header-custom header a.btn {  background-color: #0c0c0c;}.theme-solid.header-custom header a.btn:hover {  background-color: #000000;}.theme-solid header .navbar-nav .dropdown-menu a:hover {  color: #b40909;}.theme-line.lumosity-light header .navbar-nav a:hover,.theme-line.lumosity-light header .navbar-nav .open > a {  color: #b40909;}.theme-line.lumosity-light header a.btn {  background-color: #b40909;}.theme-line.lumosity-light header a.btn:hover {  background-color: #530404;}.theme-solid .main-links .links a:hover {  color: #b40909;}.theme-solid .main-content a {  color: #b40909;}.theme-solid .main-content a:hover {  color: #530404;}.theme-solid .sidebar-nav ul li a.active:before {  background-color: #b40909;}.theme-solid .sidebar-nav ul li a.active {  color: #b40909;}.theme-solid .sidebar-nav ul li a:hover,.theme-solid .sidebar-nav ul li a.active:hover {  color: #530404;}.theme-solid .btn-primary {  background-color: #b40909;}.theme-solid .btn-primary:hover {  background-color: #530404;}.theme-solid .main-content .nav-horizontal a.active {  border-color: #b40909;  color: #b40909;}.theme-solid .main-content .nav-horizontal a:hover {  color: #530404;}.theme-solid .main-content .nav-horizontal a.active:hover {  border-color: #530404;}.theme-solid header .navbar-nav a.active ,.theme-solid #versions-list li a:hover strong,.theme-solid #versions-list li a.active .current,.theme-solid #versions-list li a:active .current {  color: #b40909;}.theme-solid.body-threes .section-right .threes-nav .btn-default:hover,.theme-solid.page-docs.body-threes .section-right .threes-nav .pull-right a:hover {  color: #b40909;  border-color: #b40909;}.theme-solid.header-gradient header {  background: -moz-linear-gradient(top, #3f3f3f, #191919);  background: -webkit-gradient(linear, left top, #3f3f3f, #191919);  background: -webkit-linear-gradient(top, #3f3f3f, #191919);  background: linear-gradient(to bottom, #3f3f3f, #191919);}.theme-solid.header-custom .header {  background-image: url(undefined);  background-position: center center;}body {  font-weight: 400;font-family: Open Sans, sans-serif;;}h1, h2, h3, h4, h5, h6 {  font-weight: 400;font-family: Open Sans, sans-serif;;}.submit-vote.submit-vote-parent.voted a.submit-vote-button,.submit-vote.submit-vote-parent a.submit-vote-button:hover {  background-color: #b40909;}div.submit-vote.submit-vote-parent.voted a.submit-vote-button:hover {  background-color: #530404;}a,.link .title {  color: #b40909;}a:hover,.link:hover .title {  color: #530404;}.header h1.navbar-brand a {  background-image: url(https://www.filepicker.io/api/file/NSHjtz4SXWiUbavJPTpw)}.header h1.navbar-brand {  width: 40px;}
+</style></head><body ng-controller="Root" class="layout page-docs body-none theme-solid header-solid header-bg-size-auto header-bg-pos-tl header-overlay-triangles lumosity-normal undefined theme-threes ng-scope os-osx"><div class="wrapper"><header id="header" class="header"><div class="container"><h1 class="navbar-brand"><a href="https://tattoodo-news.readme.io/">Tattoodo News API</a></h1><div class="navbar-collapse collapse has-github"><div id="project-info">{"id":"55e45f39ec33470d004af82b","name":"Tattoodo News API","subdomain":"tattoodo-news","versions":[{"_id":"55e45f39ec33470d004af82e","releaseDate":"2015-08-31T14:05:45.919Z","is_deprecated":false,"is_hidden":false,"is_beta":false,"is_stable":true,"codename":"v1.0","version_clean":"1.0.0","version":"1"}],"current_version":{"version_clean":"1.0.0","version":"1"},"oauth":{"enabled":false},"api":{"name":"","url":"http://blog.tattoodo.com/wp-json/add_posts/v:version","contenttype":"form","auth":"","explorer":true,"jwt":false,"authextra":[{"_id":"563ce97a913e650d00b65f5a","type":"manual","default":"","key":""}],"headers":[]},"apiAlt":[],"plan_details":{"name":"Business","is_active":true,"cost":199,"versions":10000,"custom_domain":true,"custom_pages":true,"whitelabel":true,"errors":true,"password":true,"landing_page":true,"themebuilder":true,"stylesheet":true,"javascript":true,"html":true,"extra_html":true,"admins":true,"apps":true},"apps":{"enabled":false},"intercom":""}</div><ul class="nav navbar-nav"><li class="active"><a href="https://tattoodo-news.readme.io/docs" title="Documentation">Documentation</a></li><li><a href="https://tattoodo-news.readme.io/discuss" title="Support">Support</a></li></ul><ul class="nav navbar-nav pull-right"><li><div class="searchbox"><div class="fa fa-search"></div><span class="twitter-typeahead" style="position: relative; display: inline-block;"><input type="text" class="typeahead tt-hint" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0.0980392);"><input type="text" placeholder="Search" class="typeahead tt-input" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &#39;Open Sans&#39;, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-dropdown-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-docs"></div><div class="tt-dataset tt-dataset-support"></div><div class="tt-dataset tt-dataset-blog"></div><div class="tt-notfound">No results found</div></div></span></div></li><li><span class="not-link">v1</span></li><li ng-show="u.user" class="ng-hide"><a id="user-dropdown" href="" data-toggle="dropdown" title="User Options" class="ng-binding"> 
+<div class="fa fa-caret-down"></div></a><ul role="menu" aria-labelledby="user-dropdown" class="dropdown-menu"><li role="presentation" ng-show="u.user.is_admin" class="ng-hide"><a href="https://dash.readme.io/project/tattoodo-news/v1/dashboard">Admin Panel</a></li><li role="presentation"><a href="https://tattoodo-news.readme.io/logout">Log Out</a></li></ul></li><li ng-show="!u.user" class="nav-login"><a ng-click="login()" href="https://tattoodo-news.readme.io/docs/newsadd_post#">Log In</a></li></ul></div></div></header><div class="container body-container"><div class="main-content"><div class="main-head"><div ng-controller="ShowPage" class="ng-scope"><div scope-scoop=""><pre var="page" ng-non-bindable="" style="display: none;">{"__v":5,"_id":"560d1c1099bb5a0d0044f299","category":{"__v":3,"_id":"55e46130ec33470d004af838","project":"55e45f39ec33470d004af82b","version":"55e45f39ec33470d004af82e","pages":["55e463acde0d360d0027bb8b","55e46b2f6f190c1900a407bb","55e84c6da477aa3700a571ad"],"reference":false,"createdAt":"2015-08-31T14:14:08.331Z","from_sync":false,"order":0,"slug":"public","title":"Public"},"project":"55e45f39ec33470d004af82b","user":"55e953a35faf542500c9d255","version":{"__v":4,"_id":"55e45f39ec33470d004af82e","project":"55e45f39ec33470d004af82b","createdAt":"2015-08-31T14:05:45.919Z","releaseDate":"2015-08-31T14:05:45.919Z","categories":["55e45f3aec33470d004af82f","55e46130ec33470d004af838","560d15fbac2859170013fb01","5624d0065a86b423009462cd"],"is_deprecated":false,"is_hidden":false,"is_beta":false,"is_stable":true,"codename":"v1.0","version_clean":"1.0.0","version":"1"},"updates":[],"createdAt":"2015-10-01T11:42:08.324Z","link_external":false,"link_url":"","githubsync":"","sync_unique":"","hidden":false,"api":{"examples":{"codes":[{"language":"curl","code":"curl 'http://blog.tattoodo.com/wp-json/add_posts/v1/app_data?after=2015-11-02T14:03:51'"}]},"results":{"codes":[{"status":200,"language":"json","code":"[\n    {\n        \"id\": 68449,\n        \"title\": \"6 Super Lucky Arowana Tattoos\",\n        \"fb_user_id\": false,\n        \"category\": [\n            112\n        ],\n        \"content\": [\n            {\n                \"type\": \"image\",\n                \"id\": 68450,\n                \"image_url\": \"http://blog.tattoodo.com/wp-content/uploads/2015/10/arowana-tattoo-620x4071.jpg\",\n                \"caption\": \"\",\n                \"featured_image\": true,\n                \"bodytag\": \"\"\n            },\n            {\n                \"type\": \"text\",\n                \"id\": 69098,\n                \"content\": \"Arowana tattoos are not as popular as the Koi but they definitely are lucky and also an awesome tattoo subject when executed masterfully.\"\n            },\n            {\n                \"type\": \"image\",\n                \"id\": 68451,\n                \"image_url\": \"http://blog.tattoodo.com/wp-content/uploads/2015/10/arowana-tattoo-5-578x4951.jpg\",\n                \"caption\": \"Beautiful half sleeve arowana tattoo\",\n                \"featured_image\": false,\n                \"bodytag\": \"\"\n            }\n        ],\n        \"modified\": \"2015-11-02T14:03:51+00:00\",\n        \"image_url\": \"http://blog.tattoodo.com/wp-content/uploads/2015/10/arowana-tattoo-620x4071.jpg\"\n    }\n]","name":""}]},"settings":"","auth":"required","params":[{"_id":"563c7af819ae7b0d0050d4e9","required":false,"desc":"YYYY-MM-DDThh:mm:ss","default":"","type":"datetime","name":"after"}],"url":"/app_data"},"order":0,"body":"","excerpt":"","slug":"newsadd_post","type":"get","title":"/app_data"}</pre></div><div class="row"><div class="col-sm-3 border-right section-left"><div saveheight="1" class="sidebar-nav"><h4>Public</h4><ul><li><a href="./Tattoodo_api_files/Tattoodo_api.html" class="active"><span title="get" class="pg-type type-get">get</span><span>/app_data</span></a></li></ul><h4>Login required</h4><ul><li><a href="https://tattoodo-news.readme.io/docs/auth_test"><span title="get" class="pg-type type-get">get</span><span>/auth_test</span></a></li><li><a href="https://tattoodo-news.readme.io/docs/wp-jsonapiv1newsadd_post"><span title="get" class="pg-type type-get">get</span><span>/add_post/:id</span></a></li><li><a href="https://tattoodo-news.readme.io/docs/add_post"><span title="post" class="pg-type type-post">post</span><span>/add_post</span></a></li><li><a href="https://tattoodo-news.readme.io/docs/newsadd_post-1"><span title="put" class="pg-type type-put">put</span><span>/add_post/:id</span></a></li><li><a href="https://tattoodo-news.readme.io/docs/add_postid"><span title="delete" class="pg-type type-delete">delete</span><span>/add_post/:id</span></a></li><li><a href="https://tattoodo-news.readme.io/docs/newscategories"><span title="get" class="pg-type type-get">get</span><span>/categories</span></a></li><li><a href="https://tattoodo-news.readme.io/docs/body_tags"><span title="get" class="pg-type type-get">get</span><span>/body_tags</span></a></li><li><a href="https://tattoodo-news.readme.io/docs/add_post_image"><span title="post" class="pg-type type-post">post</span><span>/add_post_image</span></a></li><li><a href="https://tattoodo-news.readme.io/docs/lockid"><span title="put" class="pg-type type-put">put</span><span>/lock/:id</span></a></li><li><a href="https://tattoodo-news.readme.io/docs/image_bank"><span title="get" class="pg-type type-get">get</span><span>/image_bank</span></a></li><li><a href="https://tattoodo-news.readme.io/docs/image_bank-1"><span title="post" class="pg-type type-post">post</span><span>/image_bank</span></a></li><li><a href="https://tattoodo-news.readme.io/docs/image_bankid"><span title="put" class="pg-type type-put">put</span><span>/image_bank/:id</span></a></li></ul></div></div><div class="col-sm-9 border-left section-right"><div class="docs-content"><div class="docs-header"><nav class="pull-right"><a href="https://dash.readme.io/project/tattoodo-news/v1/docs/newsadd_post" require-login="" ng-show="u.user.is_admin" class="suggest ng-hide"><div class="fa fa-pencil fa-right"></div>Edit this Page</a><a href="https://tattoodo-news.readme.io/docs/newsadd_post/edit" require-login="" ng-hide="u.user.is_admin" class="suggest"><div class="fa fa-pencil fa-right"></div>Suggest Edits</a></nav><h1><span class="pg-type-big pg-type type-get">get</span>/app_data</h1><div marked="" class="ng-isolate-scope"></div><hr></div><div class="docs-body"><div class="api-manager"><h3>Definition</h3><div class="api-definition"><span class="definition-url ng-binding">http://blog.tattoodo.com/wp-json/add_posts/v1</span><span class="definition-path ng-binding">/app_data</span></div></div><div class="api-manager"><hr class="bottom"><h3>Parameters</h3><div class="param-table"><div class="table"><div class="tr"><div class="td param"><strong>after<span class="colon">:</span></strong></div><div class="td"> <strong class="param-type">DateTime</strong><div marked="" class="ng-isolate-scope"><p>YYYY-MM-DDThh:mm:ss</p>
+</div></div></div></div></div></div><div class="api-manager"><hr class="bottom"><h3>Examples</h3><div class="block-code block-show-code ng-isolate-scope ng-pristine ng-valid" scheme="light" type="&#39;code&#39;" ng-model="page.api.examples">
+  <div class="code-tabs">
+    <!-- ngRepeat: tab in data.codes track by $id($index) --><div ng-class="{tab: true, on:$index==current, off:$index!=current}" ng-repeat="tab in data.codes track by $id($index)" class="ng-scope tab on">
+      <a href="" ng-click="choose($index)">
+        <!-- ngIf: tab.status -->
+        <!-- ngIf: !tab.status --><span ng-if="!tab.status" class="ng-scope ng-binding">
+          cURL
+        </span><!-- end ngIf: !tab.status -->
+      </a><span ng-hide="$last" class="ng-hide">·</span>
+    </div><!-- end ngRepeat: tab in data.codes track by $id($index) -->
+  </div>
+
+  <!-- ngRepeat: tab in data.codes track by $id($index) --><div ng-repeat="tab in data.codes track by $id($index)" ng-show="$index==current" class="ng-scope">
+  <pre class="cm-s-neo" data-mode="curl"><span class="cm-builtin">curl</span> <span class="cm-string">'http://blog.tattoodo.com/wp-json/add_posts/v1/app_data?after=2015-11-02T14:03:51'</span></pre>
+</div><!-- end ngRepeat: tab in data.codes track by $id($index) -->
+</div><hr class="bottom"><h3>Result Format</h3><div class="block-code block-show-code ng-isolate-scope ng-pristine ng-valid" scheme="light" type="&#39;code&#39;" ng-model="page.api.results" status="1">
+  <div class="code-tabs">
+    <!-- ngRepeat: tab in data.codes track by $id($index) --><div ng-class="{tab: true, on:$index==current, off:$index!=current}" ng-repeat="tab in data.codes track by $id($index)" class="ng-scope tab on">
+      <a href="" ng-click="choose($index)">
+        <!-- ngIf: tab.status --><span ng-if="tab.status" class="ng-scope ng-binding">
+          <!-- ngIf: tab.status --><span ng-if="tab.status" class="status-icon status-icon-success"></span><!-- end ngIf: tab.status -->
+          <!-- ngIf: !getStatusCode(tab.status)[3] --><em ng-if="!getStatusCode(tab.status)[3]" class="ng-scope ng-binding">200</em><!-- end ngIf: !getStatusCode(tab.status)[3] -->
+          OK
+        </span><!-- end ngIf: tab.status -->
+        <!-- ngIf: !tab.status -->
+      </a><span ng-hide="$last" class="ng-hide">·</span>
+    </div><!-- end ngRepeat: tab in data.codes track by $id($index) -->
+  </div>
+
+  <!-- ngRepeat: tab in data.codes track by $id($index) --><div ng-repeat="tab in data.codes track by $id($index)" ng-show="$index==current" class="ng-scope">
+  <pre class="cm-s-neo" data-mode="json">[
+    {
+        <span class="cm-property">"id"</span>: <span class="cm-number">68449</span>,
+        <span class="cm-property">"title"</span>: <span class="cm-string">"6 Super Lucky Arowana Tattoos"</span>,
+        <span class="cm-property">"fb_user_id"</span>: <span class="cm-atom">false</span>,
+        <span class="cm-property">"category"</span>: [
+            <span class="cm-number">112</span>
+        ],
+        <span class="cm-property">"content"</span>: [
+            {
+                <span class="cm-property">"type"</span>: <span class="cm-string">"image"</span>,
+                <span class="cm-property">"id"</span>: <span class="cm-number">68450</span>,
+                <span class="cm-property">"image_url"</span>: <span class="cm-string">"http://blog.tattoodo.com/wp-content/uploads/2015/10/arowana-tattoo-620x4071.jpg"</span>,
+                <span class="cm-property">"caption"</span>: <span class="cm-string">""</span>,
+                <span class="cm-property">"featured_image"</span>: <span class="cm-atom">true</span>,
+                <span class="cm-property">"bodytag"</span>: <span class="cm-string">""</span>
+            },
+            {
+                <span class="cm-property">"type"</span>: <span class="cm-string">"text"</span>,
+                <span class="cm-property">"id"</span>: <span class="cm-number">69098</span>,
+                <span class="cm-property">"content"</span>: <span class="cm-string">"Arowana tattoos are not as popular as the Koi but they definitely are lucky and also an awesome tattoo subject when executed masterfully."</span>
+            },
+            {
+                <span class="cm-property">"type"</span>: <span class="cm-string">"image"</span>,
+                <span class="cm-property">"id"</span>: <span class="cm-number">68451</span>,
+                <span class="cm-property">"image_url"</span>: <span class="cm-string">"http://blog.tattoodo.com/wp-content/uploads/2015/10/arowana-tattoo-5-578x4951.jpg"</span>,
+                <span class="cm-property">"caption"</span>: <span class="cm-string">"Beautiful half sleeve arowana tattoo"</span>,
+                <span class="cm-property">"featured_image"</span>: <span class="cm-atom">false</span>,
+                <span class="cm-property">"bodytag"</span>: <span class="cm-string">""</span>
+            }
+        ],
+        <span class="cm-property">"modified"</span>: <span class="cm-string">"2015-11-02T14:03:51+00:00"</span>,
+        <span class="cm-property">"image_url"</span>: <span class="cm-string">"http://blog.tattoodo.com/wp-content/uploads/2015/10/arowana-tattoo-620x4071.jpg"</span>
+    }
+]</pre>
+</div><!-- end ngRepeat: tab in data.codes track by $id($index) -->
+</div></div><!--if is_sidebar !== undefined--><div class="content block-content ready"><div class="blocks-parent"><!-- ngRepeat: (k, section) in sections --></div></div><!--else--><!--  content.content(ng-cloak)= page.body--><div ng-show="true" class="api-manager try-it-out"><hr class="bottom"><!-- ngIf: hasAuth --><div ng-if="hasAuth" class="auth-box-parent ng-scope"><a href="" ng-click="authBox()" ng-class="{&#39;drop-enabled&#39;: showAuth, &#39;auth-ready&#39;: apiAuth.ready(page)}" class="auth-box auth-ready"><div class="fa fa-key"></div><div class="fa fa-check"></div></a><form ng-class="{on: showAuth}" ng-submit="authBox(false)" class="auth-box-drop ng-pristine ng-valid"><!-- Needed for ng-submit to work--><button type="submit" class="hidden"></button><h3><div class="fa fa-user fa-right"></div>User Information</h3></form></div><!-- end ngIf: hasAuth --><h2>Try It Out</h2><form ng-submit="try()" class="ng-pristine ng-valid ng-valid-required"><div class="try-entries clearfix three-cols"><!-- ngRepeat: param in page.api.params --><div ng-repeat="param in page.api.params" class="ng-scope"><label class="ng-binding">after<span ng-show="param.required" class="param-required ng-hide">*</span></label><div ng-switch="param.type" try-input="" try-data="tryData" param="param" class="ng-isolate-scope"><!-- ngSwitchWhen: boolean --><!-- ngSwitchWhen: int --><!-- ngSwitchWhen: double --><!-- ngSwitchWhen: object --><!-- ngSwitchWhen: yyyy-mm-dd --><!-- ngSwitchDefault: ng-switch-default --><div ng-switch-default="ng-switch-default" class="ng-scope"><!-- ngIf: param.type.indexOf('array') == 0 --><!-- ngIf: !(param.type.indexOf('array') == 0) --><div ng-if="!(param.type.indexOf(&#39;array&#39;) == 0)" class="ng-scope"><input type="text" ng-model="tryData[param.name]" placeholder="" ng-required="param.required" class="form-control ng-pristine ng-valid ng-valid-required"></div><!-- end ngIf: !(param.type.indexOf('array') == 0) --></div></div><!--input.form-control(ng-model="tryData[param.name]", placeholder="{{ keys(defaults[param.name]) }}")--></div><!-- end ngRepeat: param in page.api.params --></div><div class="test-url"><span class="pg-type-big pg-type type-get">get</span><div class="input-group"><input disabled="" value="http://blog.tattoodo.com/wp-json/add_posts/v1/app_data" class="form-control"><span class="input-group-btn"><button type="submit" ng-disabled="tryLoading" class="btn btn-success"> <span ng-hide="tryLoading" class="">Try It!</span><i ng-show="tryLoading" class="fa fa-circle-o-notch fa-spin ng-hide"></i></button></span></div></div><!-- ngIf: tryResults --></form></div></div></div></div></div></div></div></div></div></div><!-- Include partials--><div><script type="text/ng-template" id="content"><div class="block-content"><div class="blocks-parent"><div ng-repeat="(k, section) in sections" data-pos="{{ k }}" ng-if="is_sidebar === undefined || is_sidebar == !!section.sidebar" class="block section"><div ng-switch="section.type"><div ng-switch-when="textarea"><div marked="section.text"></div></div><!-- TODO: Make this generic using 'default' --><div ng-switch-when="api-header"><div type="section.type" ng-model="section.data" class="block-api-header"></div></div><div ng-switch-when="code"><div type="section.type" ng-model="section.data" class="block-code"></div></div><div ng-switch-when="image"><div type="section.type" ng-model="section.data" class="block-image"></div></div><div ng-switch-when="embed"><div type="section.type" ng-model="section.data" class="block-embed"></div></div><div ng-switch-when="callout"><div type="section.type" ng-model="section.data" class="block-callout"></div></div><div ng-switch-when="parameters"><div type="section.type" ng-model="section.data" class="block-parameters"></div></div><div ng-switch-when="html"><div type="section.type" ng-model="section.data" class="block-html"></div></div></div></div></div></div></script></div><div><script type="text/ng-template" id="blocks/api-header/show"><div class="block-display-api-header">
+  <!--
+  <div class="picker-offset">
+    <input type-picker ng-cloak ng-model="doc.type">
+  </div>
+  -->
+  <h2 id="{{ slugify(data.title) }}">
+    <span ng-show="data.type != 'basic'" class="pg-type-big pg-type type-{{data.type}}">{{data.type}}</span>
+    {{ data.title }}
+    <a class="fa fa-anchor fa-left" href="#{{ slugify(data.title) }}"></a>
+  </h2>
+  <hr>
+</div>
+</script><script type="text/ng-template" id="blocks/callout/show"><div class="block-show-callout {{ !data.title? 'no-title' : ''}} type-{{data.type}}">
+  <h3>
+    <i class="fa fa-info-circle {{data.type == 'info' ? 'on' : ''}}" title="Info"></i>
+    <i class="fa fa-exclamation-circle {{data.type == 'warning' ? 'on' : ''}}" title="Warning"></i>
+    <i class="fa fa-exclamation-triangle {{data.type == 'danger' ? 'on' : ''}}" title="Danger"></i>
+    <i class="fa fa-check-square {{data.type == 'success' ? 'on' : ''}}" title="Success"></i>
+
+    <span>{{ data.title }}</span>
+  </h3>
+
+  <div marked="data.body"></div>
+</div>
+</script><script type="text/ng-template" id="blocks/code/show"><div class="block-show-code">
+  <div class="code-tabs">
+    <div ng-class="{tab: true, on:$index==current, off:$index!=current}" ng-repeat="tab in data.codes track by $id($index)">
+      <a href="" ng-click="choose($index)">
+        <span ng-if="tab.status">
+          <span ng-if="tab.status" class="status-icon status-icon-{{ getStatusCode(tab.status)[2] }}"></span>
+          <em ng-if="!getStatusCode(tab.status)[3]">{{getStatusCode(tab.status)[0]}}</em>
+          {{ tab.name ? tab.name : getStatusCode(tab.status)[1] }}
+        </span>
+        <span ng-if="!tab.status">
+          {{ tab.name ? tab.name : code_types_obj[tab.language] }}
+        </span>
+      </a><span ng-hide="$last">&middot;</span>
+    </div>
+  </div>
+
+  <div ng-repeat="tab in data.codes track by $id($index)" ng-show="$index==current">
+  <pre class="{{theme}}" data-mode="{{ data.codes[$index].language }}">{{ data.codes[$index].code }}</pre>
+</div>
+</div>
+</script><script type="text/ng-template" id="blocks/image/show"><div class="block-display-image" ng-show="data.images.length > 0">
+  <figure ng-show="data.images[0].image.length">
+    <img ng-src="{{ data.images[0].image[0] }}">
+    <figcaption>{{ data.images[0].caption }}</figcaption>
+  </figure>
+</div>
+</script><script type="text/ng-template" id="blocks/parameters/show"><div class="block-display-parameters">
+  <table>
+    <tr ng-if="data.data['h-0'] || data.data['h-1']"> <!-- Rough check -->
+      <th ng-repeat="(c, col) in getNumber(data.cols) track by $index">
+        {{ data.data['h-' + c] }}
+      </th>
+    </tr>
+    <tr ng-repeat="(r, row) in getNumber(data.rows) track by $index">
+      <td ng-repeat="(c, col) in getNumber(data.cols) track by $index">
+        <div marked="data.data[r + '-' + c]"></div>
+      </th>
+    </tr>
+  </table>
+</div>
+
+</script><script type="text/ng-template" id="blocks/html/show"><div class="block-display-html"></div>
+
+</script><script type="text/ng-template" id="blocks/embed/show"><div class="block-display-embed">
+  <div class="html-replace" ng-if="data.html"></div>
+  <div ng-if="!data.html">
+    <div ng-if="data.iframe" class="iframe-replace"></div>
+    <div ng-if="!data.iframe">
+      <strong>
+        <img ng-src="{{data.favicon}}" class="favicon" ng-if="data.favicon">
+        <a href="{{ data.url }}" target="_new">{{ data.title || data.url }}</a>
+      </strong>
+    </div>
+  </div>
+</div>
+
+</script></div><a id="inactive-notification" href="https://dash.readme.io/project/tattoodo-news/v1/plans">This site is only viewable by admins.<strong>Launch it to make it public</strong></a><div class="container container-footer"><footer><div class="pull-right"><a href="https://readme.io/" class="poweredby">readme.io</a></div></footer></div><a href="https://github.com/Tattoodo/main"><img style="position: absolute; top: 0; right: 0; border: 0;" src="./Tattoodo_api_files/forkme_right_green_007200.png" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a></body></html>

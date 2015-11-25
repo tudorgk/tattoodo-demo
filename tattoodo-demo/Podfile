@@ -1,0 +1,29 @@
+use_frameworks!
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.1'
+workspace 'tattoodo-demo-workspace'
+
+
+def generic_pods
+	pod 'Alamofire'
+	pod 'Bolts'
+end
+
+target 'tattoodo-demo' do
+	generic_pods
+	pod 'M13ProgressSuite'
+	pod 'JGProgressHUD'
+	pod 'SnapKit'
+	pod 'pop'
+	pod 'IQKeyboardManager'
+	pod 'Shimmer'
+	pod 'CWStatusBarNotification'
+	xcodeproj 'tattoodo-demo'
+	link_with 'tattoodo-demo'
+end
+
+target 'tattoodo-demoTests' do
+	generic_pods
+	xcodeproj 'tattoodo-demo'
+	link_with 'tattoodo-demoTests'
+end

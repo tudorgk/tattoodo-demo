@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "71D3CFBA1793B79C5EE9EE3D917AA762781D32E4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "71D3CFBA1793B79C5EE9EE3D917AA762781D32E4" : 0,
+    "8B2B472EB6990232BC25F4BFC0C54F3106E9BBFE" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "32848010-D84C-483A-BF34-18F46713AC33",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "71D3CFBA1793B79C5EE9EE3D917AA762781D32E4" : "tattoodo-demo\/",
+    "8B2B472EB6990232BC25F4BFC0C54F3106E9BBFE" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "tattoodo-demo-workspace",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "tattoodo-demo\/tattoodo-demo-workspace.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tudorgk\/tattoodo-demo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "71D3CFBA1793B79C5EE9EE3D917AA762781D32E4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/tudor_dragan\/nextdoor-menu.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8B2B472EB6990232BC25F4BFC0C54F3106E9BBFE"
+    }
+  ]
+}

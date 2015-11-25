@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0560350E1C063DCD00FE1EBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0560350D1C063DCD00FE1EBA /* AppDelegate.swift */; };
+		056035101C063DCD00FE1EBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0560350F1C063DCD00FE1EBA /* ViewController.swift */; };
+		056035131C063DCD00FE1EBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056035111C063DCD00FE1EBA /* Main.storyboard */; };
+		056035151C063DCD00FE1EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 056035141C063DCD00FE1EBA /* Assets.xcassets */; };
+		056035181C063DCD00FE1EBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056035161C063DCD00FE1EBA /* LaunchScreen.storyboard */; };
+		056035231C063DCD00FE1EBA /* tattoodo_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056035221C063DCD00FE1EBA /* tattoodo_demoTests.swift */; };
+		0560352E1C063DCD00FE1EBA /* tattoodo_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0560352D1C063DCD00FE1EBA /* tattoodo_demoUITests.swift */; };
+		28407A1BDA679AF51AFA4B5B /* Pods_tattoodo_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52ED8021CE26932AFCDCD29 /* Pods_tattoodo_demo.framework */; };
+		BFB1AC9E6455388349F51FD2 /* Pods_tattoodo_demoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D374625FBB63F5468F5BDB /* Pods_tattoodo_demoTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0560351F1C063DCD00FE1EBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 056035021C063DCD00FE1EBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 056035091C063DCD00FE1EBA;
+			remoteInfo = "tattoodo-demo";
+		};
+		0560352A1C063DCD00FE1EBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 056035021C063DCD00FE1EBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 056035091C063DCD00FE1EBA;
+			remoteInfo = "tattoodo-demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0560350A1C063DCD00FE1EBA /* tattoodo-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tattoodo-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0560350D1C063DCD00FE1EBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0560350F1C063DCD00FE1EBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		056035121C063DCD00FE1EBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		056035141C063DCD00FE1EBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		056035171C063DCD00FE1EBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		056035191C063DCD00FE1EBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0560351E1C063DCD00FE1EBA /* tattoodo-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tattoodo-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		056035221C063DCD00FE1EBA /* tattoodo_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tattoodo_demoTests.swift; sourceTree = "<group>"; };
+		056035241C063DCD00FE1EBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		056035291C063DCD00FE1EBA /* tattoodo-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tattoodo-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0560352D1C063DCD00FE1EBA /* tattoodo_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tattoodo_demoUITests.swift; sourceTree = "<group>"; };
+		0560352F1C063DCD00FE1EBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08391735BC89484C49802B00 /* Pods-tattoodo-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tattoodo-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tattoodo-demo/Pods-tattoodo-demo.debug.xcconfig"; sourceTree = "<group>"; };
+		4E87D823DCC4B33760042AEA /* Pods-tattoodo-demoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tattoodo-demoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tattoodo-demoTests/Pods-tattoodo-demoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		95D374625FBB63F5468F5BDB /* Pods_tattoodo_demoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tattoodo_demoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1A1C0C8348C87EE84A3344B /* Pods-tattoodo-demoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tattoodo-demoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tattoodo-demoTests/Pods-tattoodo-demoTests.release.xcconfig"; sourceTree = "<group>"; };
+		BE4C000A67FB52C42B3E1CF8 /* Pods-tattoodo-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tattoodo-demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-tattoodo-demo/Pods-tattoodo-demo.release.xcconfig"; sourceTree = "<group>"; };
+		E52ED8021CE26932AFCDCD29 /* Pods_tattoodo_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tattoodo_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		056035071C063DCD00FE1EBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28407A1BDA679AF51AFA4B5B /* Pods_tattoodo_demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0560351B1C063DCD00FE1EBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFB1AC9E6455388349F51FD2 /* Pods_tattoodo_demoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		056035261C063DCD00FE1EBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		056035011C063DCD00FE1EBA = {
+			isa = PBXGroup;
+			children = (
+				0560350C1C063DCD00FE1EBA /* tattoodo-demo */,
+				056035211C063DCD00FE1EBA /* tattoodo-demoTests */,
+				0560352C1C063DCD00FE1EBA /* tattoodo-demoUITests */,
+				0560350B1C063DCD00FE1EBA /* Products */,
+				1D2FCCE789FC71E28BABF967 /* Pods */,
+				9EC8FF85187A3E2CCF32BF7C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0560350B1C063DCD00FE1EBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0560350A1C063DCD00FE1EBA /* tattoodo-demo.app */,
+				0560351E1C063DCD00FE1EBA /* tattoodo-demoTests.xctest */,
+				056035291C063DCD00FE1EBA /* tattoodo-demoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0560350C1C063DCD00FE1EBA /* tattoodo-demo */ = {
+			isa = PBXGroup;
+			children = (
+				0560350D1C063DCD00FE1EBA /* AppDelegate.swift */,
+				0560350F1C063DCD00FE1EBA /* ViewController.swift */,
+				056035111C063DCD00FE1EBA /* Main.storyboard */,
+				056035141C063DCD00FE1EBA /* Assets.xcassets */,
+				056035161C063DCD00FE1EBA /* LaunchScreen.storyboard */,
+				056035191C063DCD00FE1EBA /* Info.plist */,
+			);
+			path = "tattoodo-demo";
+			sourceTree = "<group>";
+		};
+		056035211C063DCD00FE1EBA /* tattoodo-demoTests */ = {
+			isa = PBXGroup;
+			children = (
+				056035221C063DCD00FE1EBA /* tattoodo_demoTests.swift */,
+				056035241C063DCD00FE1EBA /* Info.plist */,
+			);
+			path = "tattoodo-demoTests";
+			sourceTree = "<group>";
+		};
+		0560352C1C063DCD00FE1EBA /* tattoodo-demoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0560352D1C063DCD00FE1EBA /* tattoodo_demoUITests.swift */,
+				0560352F1C063DCD00FE1EBA /* Info.plist */,
+			);
+			path = "tattoodo-demoUITests";
+			sourceTree = "<group>";
+		};
+		1D2FCCE789FC71E28BABF967 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08391735BC89484C49802B00 /* Pods-tattoodo-demo.debug.xcconfig */,
+				BE4C000A67FB52C42B3E1CF8 /* Pods-tattoodo-demo.release.xcconfig */,
+				4E87D823DCC4B33760042AEA /* Pods-tattoodo-demoTests.debug.xcconfig */,
+				A1A1C0C8348C87EE84A3344B /* Pods-tattoodo-demoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9EC8FF85187A3E2CCF32BF7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E52ED8021CE26932AFCDCD29 /* Pods_tattoodo_demo.framework */,
+				95D374625FBB63F5468F5BDB /* Pods_tattoodo_demoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		056035091C063DCD00FE1EBA /* tattoodo-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 056035321C063DCD00FE1EBA /* Build configuration list for PBXNativeTarget "tattoodo-demo" */;
+			buildPhases = (
+				4B59B104B0B00FA0906E7C7A /* Check Pods Manifest.lock */,
+				056035061C063DCD00FE1EBA /* Sources */,
+				056035071C063DCD00FE1EBA /* Frameworks */,
+				056035081C063DCD00FE1EBA /* Resources */,
+				B2AE3BCD843A072B433B3A7C /* Embed Pods Frameworks */,
+				2F2FA58B53E1A01B4FD81B58 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tattoodo-demo";
+			productName = "tattoodo-demo";
+			productReference = 0560350A1C063DCD00FE1EBA /* tattoodo-demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0560351D1C063DCD00FE1EBA /* tattoodo-demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 056035351C063DCD00FE1EBA /* Build configuration list for PBXNativeTarget "tattoodo-demoTests" */;
+			buildPhases = (
+				F5F821CA822733F53B78E2FF /* Check Pods Manifest.lock */,
+				0560351A1C063DCD00FE1EBA /* Sources */,
+				0560351B1C063DCD00FE1EBA /* Frameworks */,
+				0560351C1C063DCD00FE1EBA /* Resources */,
+				51772F6809071B655F564E49 /* Embed Pods Frameworks */,
+				C315AE7F366FE94A03051BFF /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				056035201C063DCD00FE1EBA /* PBXTargetDependency */,
+			);
+			name = "tattoodo-demoTests";
+			productName = "tattoodo-demoTests";
+			productReference = 0560351E1C063DCD00FE1EBA /* tattoodo-demoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		056035281C063DCD00FE1EBA /* tattoodo-demoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 056035381C063DCD00FE1EBA /* Build configuration list for PBXNativeTarget "tattoodo-demoUITests" */;
+			buildPhases = (
+				056035251C063DCD00FE1EBA /* Sources */,
+				056035261C063DCD00FE1EBA /* Frameworks */,
+				056035271C063DCD00FE1EBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0560352B1C063DCD00FE1EBA /* PBXTargetDependency */,
+			);
+			name = "tattoodo-demoUITests";
+			productName = "tattoodo-demoUITests";
+			productReference = 056035291C063DCD00FE1EBA /* tattoodo-demoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		056035021C063DCD00FE1EBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "[tudor dev]";
+				TargetAttributes = {
+					056035091C063DCD00FE1EBA = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					0560351D1C063DCD00FE1EBA = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 056035091C063DCD00FE1EBA;
+					};
+					056035281C063DCD00FE1EBA = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 056035091C063DCD00FE1EBA;
+					};
+				};
+			};
+			buildConfigurationList = 056035051C063DCD00FE1EBA /* Build configuration list for PBXProject "tattoodo-demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 056035011C063DCD00FE1EBA;
+			productRefGroup = 0560350B1C063DCD00FE1EBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				056035091C063DCD00FE1EBA /* tattoodo-demo */,
+				0560351D1C063DCD00FE1EBA /* tattoodo-demoTests */,
+				056035281C063DCD00FE1EBA /* tattoodo-demoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		056035081C063DCD00FE1EBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056035181C063DCD00FE1EBA /* LaunchScreen.storyboard in Resources */,
+				056035151C063DCD00FE1EBA /* Assets.xcassets in Resources */,
+				056035131C063DCD00FE1EBA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0560351C1C063DCD00FE1EBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		056035271C063DCD00FE1EBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F2FA58B53E1A01B4FD81B58 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tattoodo-demo/Pods-tattoodo-demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B59B104B0B00FA0906E7C7A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		51772F6809071B655F564E49 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tattoodo-demoTests/Pods-tattoodo-demoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2AE3BCD843A072B433B3A7C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tattoodo-demo/Pods-tattoodo-demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C315AE7F366FE94A03051BFF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tattoodo-demoTests/Pods-tattoodo-demoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5F821CA822733F53B78E2FF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		056035061C063DCD00FE1EBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056035101C063DCD00FE1EBA /* ViewController.swift in Sources */,
+				0560350E1C063DCD00FE1EBA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0560351A1C063DCD00FE1EBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056035231C063DCD00FE1EBA /* tattoodo_demoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		056035251C063DCD00FE1EBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0560352E1C063DCD00FE1EBA /* tattoodo_demoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		056035201C063DCD00FE1EBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 056035091C063DCD00FE1EBA /* tattoodo-demo */;
+			targetProxy = 0560351F1C063DCD00FE1EBA /* PBXContainerItemProxy */;
+		};
+		0560352B1C063DCD00FE1EBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 056035091C063DCD00FE1EBA /* tattoodo-demo */;
+			targetProxy = 0560352A1C063DCD00FE1EBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		056035111C063DCD00FE1EBA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				056035121C063DCD00FE1EBA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		056035161C063DCD00FE1EBA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				056035171C063DCD00FE1EBA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		056035301C063DCD00FE1EBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		056035311C063DCD00FE1EBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		056035331C063DCD00FE1EBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08391735BC89484C49802B00 /* Pods-tattoodo-demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "tattoodo-demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tudordev.tattoodo-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		056035341C063DCD00FE1EBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE4C000A67FB52C42B3E1CF8 /* Pods-tattoodo-demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "tattoodo-demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tudordev.tattoodo-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		056035361C063DCD00FE1EBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E87D823DCC4B33760042AEA /* Pods-tattoodo-demoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "tattoodo-demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tudordev.tattoodo-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tattoodo-demo.app/tattoodo-demo";
+			};
+			name = Debug;
+		};
+		056035371C063DCD00FE1EBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1A1C0C8348C87EE84A3344B /* Pods-tattoodo-demoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "tattoodo-demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tudordev.tattoodo-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tattoodo-demo.app/tattoodo-demo";
+			};
+			name = Release;
+		};
+		056035391C063DCD00FE1EBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "tattoodo-demoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tudordev.tattoodo-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "tattoodo-demo";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		0560353A1C063DCD00FE1EBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "tattoodo-demoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tudordev.tattoodo-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "tattoodo-demo";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		056035051C063DCD00FE1EBA /* Build configuration list for PBXProject "tattoodo-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				056035301C063DCD00FE1EBA /* Debug */,
+				056035311C063DCD00FE1EBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		056035321C063DCD00FE1EBA /* Build configuration list for PBXNativeTarget "tattoodo-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				056035331C063DCD00FE1EBA /* Debug */,
+				056035341C063DCD00FE1EBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		056035351C063DCD00FE1EBA /* Build configuration list for PBXNativeTarget "tattoodo-demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				056035361C063DCD00FE1EBA /* Debug */,
+				056035371C063DCD00FE1EBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		056035381C063DCD00FE1EBA /* Build configuration list for PBXNativeTarget "tattoodo-demoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				056035391C063DCD00FE1EBA /* Debug */,
+				0560353A1C063DCD00FE1EBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 056035021C063DCD00FE1EBA /* Project object */;
+}
