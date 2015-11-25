@@ -84,23 +84,31 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-tattoodo-demo/AMScrollingNavbar.framework"
   install_framework "Pods-tattoodo-demo/Alamofire.framework"
   install_framework "Pods-tattoodo-demo/Bolts.framework"
-  install_framework "Pods-tattoodo-demo/CWStatusBarNotification.framework"
   install_framework "Pods-tattoodo-demo/IQKeyboardManager.framework"
   install_framework "Pods-tattoodo-demo/JGProgressHUD.framework"
+  install_framework "Pods-tattoodo-demo/Kingfisher.framework"
   install_framework "Pods-tattoodo-demo/M13ProgressSuite.framework"
+  install_framework "Pods-tattoodo-demo/MPParallaxView.framework"
+  install_framework "Pods-tattoodo-demo/MagicalRecord.framework"
+  install_framework "Pods-tattoodo-demo/Popsicle.framework"
   install_framework "Pods-tattoodo-demo/Shimmer.framework"
   install_framework "Pods-tattoodo-demo/SnapKit.framework"
   install_framework "Pods-tattoodo-demo/pop.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-tattoodo-demo/AMScrollingNavbar.framework"
   install_framework "Pods-tattoodo-demo/Alamofire.framework"
   install_framework "Pods-tattoodo-demo/Bolts.framework"
-  install_framework "Pods-tattoodo-demo/CWStatusBarNotification.framework"
   install_framework "Pods-tattoodo-demo/IQKeyboardManager.framework"
   install_framework "Pods-tattoodo-demo/JGProgressHUD.framework"
+  install_framework "Pods-tattoodo-demo/Kingfisher.framework"
   install_framework "Pods-tattoodo-demo/M13ProgressSuite.framework"
+  install_framework "Pods-tattoodo-demo/MPParallaxView.framework"
+  install_framework "Pods-tattoodo-demo/MagicalRecord.framework"
+  install_framework "Pods-tattoodo-demo/Popsicle.framework"
   install_framework "Pods-tattoodo-demo/Shimmer.framework"
   install_framework "Pods-tattoodo-demo/SnapKit.framework"
   install_framework "Pods-tattoodo-demo/pop.framework"

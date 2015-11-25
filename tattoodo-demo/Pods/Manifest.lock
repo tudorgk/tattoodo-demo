@@ -1,38 +1,50 @@
 PODS:
   - Alamofire (3.1.3)
+  - AMScrollingNavbar (2.0.9)
   - Bolts (1.5.0):
     - Bolts/AppLinks (= 1.5.0)
     - Bolts/Tasks (= 1.5.0)
   - Bolts/AppLinks (1.5.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.5.0)
-  - CWStatusBarNotification (2.3.3)
   - IQKeyboardManager (3.3.4)
   - JGProgressHUD (1.3.1)
+  - Kingfisher (1.8.2)
   - M13ProgressSuite (1.2.7)
+  - MagicalRecord (2.3.0)
+  - MPParallaxView (0.2.0)
   - pop (1.0.8)
+  - Popsicle (2.0.0)
   - Shimmer (1.0.2)
   - SnapKit (0.18.0)
 
 DEPENDENCIES:
   - Alamofire
+  - AMScrollingNavbar
   - Bolts
-  - CWStatusBarNotification
   - IQKeyboardManager
   - JGProgressHUD
+  - Kingfisher
   - M13ProgressSuite
+  - MagicalRecord
+  - MPParallaxView
   - pop
+  - Popsicle
   - Shimmer
   - SnapKit
 
 SPEC CHECKSUMS:
   Alamofire: 9f93b56389e48def9220dd57d1f44b1927229a5a
+  AMScrollingNavbar: 6ee57388f84b8f33f31a7944abf51b9afa16bafd
   Bolts: 722ab9a4f8b50fc4ed1b9998a5a7a2b3f16d80b4
-  CWStatusBarNotification: 2349142e97c9f16fb8247ed3c00308cd355d334b
   IQKeyboardManager: ac803e61e5b50efae6b3aeedd95a02c7c7d3b2b3
   JGProgressHUD: 153053a21d81208cb5f659691996bcefce6a9885
+  Kingfisher: b39315e9dbed7e8ffe73a9ca1be2ee006d1d57e4
   M13ProgressSuite: 03d194af6359da440641ba758aed5a18b0386a86
+  MagicalRecord: 89eb7d7ead39fb37f01c3d010665ee94d17f8dba
+  MPParallaxView: 046eebc511e2f90c22cb9ce6f4c10126be257fdc
   pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
+  Popsicle: 7f7c1592c951141b13470d3ff04723122a4e4b76
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
   SnapKit: e1f090a6d47b1dd4bd89b73f72b6746a7835ef3c
 

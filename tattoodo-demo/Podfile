@@ -7,17 +7,21 @@ workspace 'tattoodo-demo-workspace'
 def generic_pods
 	pod 'Alamofire'
 	pod 'Bolts'
+	pod 'MagicalRecord'
 end
 
 target 'tattoodo-demo' do
 	generic_pods
+	pod 'Popsicle'
+	pod 'MPParallaxView'
+	pod 'Kingfisher'
+	pod 'AMScrollingNavbar'
 	pod 'M13ProgressSuite'
 	pod 'JGProgressHUD'
 	pod 'SnapKit'
 	pod 'pop'
 	pod 'IQKeyboardManager'
 	pod 'Shimmer'
-	pod 'CWStatusBarNotification'
 	xcodeproj 'tattoodo-demo'
 	link_with 'tattoodo-demo'
 end
