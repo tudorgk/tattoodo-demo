@@ -14,6 +14,8 @@
 		056035181C063DCD00FE1EBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056035161C063DCD00FE1EBA /* LaunchScreen.storyboard */; };
 		056035231C063DCD00FE1EBA /* tattoodo_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056035221C063DCD00FE1EBA /* tattoodo_demoTests.swift */; };
 		0560352E1C063DCD00FE1EBA /* tattoodo_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0560352D1C063DCD00FE1EBA /* tattoodo_demoUITests.swift */; };
+		05FFBC861C07988900ABEFBE /* TDRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FFBC851C07988900ABEFBE /* TDRequestManager.swift */; };
+		05FFBC871C07988900ABEFBE /* TDRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FFBC851C07988900ABEFBE /* TDRequestManager.swift */; };
 		28407A1BDA679AF51AFA4B5B /* Pods_tattoodo_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52ED8021CE26932AFCDCD29 /* Pods_tattoodo_demo.framework */; };
 		BFB1AC9E6455388349F51FD2 /* Pods_tattoodo_demoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D374625FBB63F5468F5BDB /* Pods_tattoodo_demoTests.framework */; };
 /* End PBXBuildFile section */
@@ -49,6 +51,7 @@
 		056035291C063DCD00FE1EBA /* tattoodo-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tattoodo-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0560352D1C063DCD00FE1EBA /* tattoodo_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tattoodo_demoUITests.swift; sourceTree = "<group>"; };
 		0560352F1C063DCD00FE1EBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05FFBC851C07988900ABEFBE /* TDRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDRequestManager.swift; sourceTree = "<group>"; };
 		08391735BC89484C49802B00 /* Pods-tattoodo-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tattoodo-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tattoodo-demo/Pods-tattoodo-demo.debug.xcconfig"; sourceTree = "<group>"; };
 		4E87D823DCC4B33760042AEA /* Pods-tattoodo-demoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tattoodo-demoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tattoodo-demoTests/Pods-tattoodo-demoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		95D374625FBB63F5468F5BDB /* Pods_tattoodo_demoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tattoodo_demoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +112,7 @@
 		0560350C1C063DCD00FE1EBA /* tattoodo-demo */ = {
 			isa = PBXGroup;
 			children = (
+				05FFBC841C07986200ABEFBE /* Tattoodo Api */,
 				0560350D1C063DCD00FE1EBA /* AppDelegate.swift */,
 				0560350F1C063DCD00FE1EBA /* ViewController.swift */,
 				056035111C063DCD00FE1EBA /* Main.storyboard */,
@@ -135,6 +139,14 @@
 				0560352F1C063DCD00FE1EBA /* Info.plist */,
 			);
 			path = "tattoodo-demoUITests";
+			sourceTree = "<group>";
+		};
+		05FFBC841C07986200ABEFBE /* Tattoodo Api */ = {
+			isa = PBXGroup;
+			children = (
+				05FFBC851C07988900ABEFBE /* TDRequestManager.swift */,
+			);
+			name = "Tattoodo Api";
 			sourceTree = "<group>";
 		};
 		1D2FCCE789FC71E28BABF967 /* Pods */ = {
@@ -389,6 +401,7 @@
 			files = (
 				056035101C063DCD00FE1EBA /* ViewController.swift in Sources */,
 				0560350E1C063DCD00FE1EBA /* AppDelegate.swift in Sources */,
+				05FFBC861C07988900ABEFBE /* TDRequestManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				056035231C063DCD00FE1EBA /* tattoodo_demoTests.swift in Sources */,
+				05FFBC871C07988900ABEFBE /* TDRequestManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,10 +7,15 @@
 //
 
 import XCTest
+import Alamofire
+
 @testable import tattoodo_demo
 
 class tattoodo_demoTests: XCTestCase {
-    
+	
+	let requestManager : TDRequestManager = TDRequestManager.sharedInstance
+	
+	
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -21,10 +26,23 @@ class tattoodo_demoTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+    func testAppDataRequest() {
+		let expectation = expectationWithDescription("app data expectation")
+		
+		
+		let dateToSearch:NSDate = NSDate.init(timeIntervalSince1970: 1446465616)
+		
+		requestManager.getAppData("http://blog.tattoodo.com/wp-json/add_posts/v1/app_data", after: dateToSearch,
+			completion: {success,response in
+				
+				if(success){
+					print("success: \(success) with \(response)")
+					expectation.fulfill()
+				}
+				
+		})
+		waitForExpectationsWithTimeout(5.0, handler: nil)
+	}
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
