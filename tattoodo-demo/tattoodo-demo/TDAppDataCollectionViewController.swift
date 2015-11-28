@@ -114,10 +114,13 @@ class TDAppDataCollectionViewController: UICollectionViewController, CHTCollecti
 		let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! ImageUICollectionViewCell
 		
 		// Add image to cell
+		cell.image.image = self.dataSource.articlesArray.objectAtIndex(indexPath.row).objectForKey("image_file") as? UIImage
+		
+		/*
 		cell.image.kf_setImageWithURL(self.dataSource.articlesArray.objectAtIndex(indexPath.row).objectForKey("featured_image_url") as! NSURL, placeholderImage: self.placeHolderImage, optionsInfo: [], completionHandler: {dlImage, error, cacheType, imageURL in
 			cell.image.image = dlImage
 		})
-	
+		*/
 		return cell
 	}
 	
@@ -131,7 +134,7 @@ class TDAppDataCollectionViewController: UICollectionViewController, CHTCollecti
 		//		let imageSize = model.images[indexPath.row].size
 		//		let imageSize = 10;
 		
-		return (UIImage(named: "image1")?.size)!
+		return (self.dataSource.articlesArray.objectAtIndex(indexPath.row).objectForKey("image_file") as! UIImage).size
 	}
 	
 	

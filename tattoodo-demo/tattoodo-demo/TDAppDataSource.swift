@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Kingfisher
+import Alamofire
 
 class TDAppDataSource: NSObject {
 	var articlesArray = NSMutableArray()
@@ -21,6 +23,7 @@ class TDAppDataSource: NSObject {
 	convenience init(data: NSArray){
 		self.init()
 		articlesArray = NSMutableArray(array: data)
+		
 	}
 	
 	internal func retrieveArticlesAfterDate(date: NSDate?){
@@ -36,12 +39,26 @@ class TDAppDataSource: NSObject {
 		TDRequestManager.sharedInstance.getAppData(urlString, after: afterDate!, completion: {[weak self]completion, data in
 			if(completion){
 				self!.articlesArray = CFPropertyListCreateDeepCopy(nil, data as! NSArray, CFPropertyListMutabilityOptions.MutableContainersAndLeaves.rawValue) as! NSMutableArray
+				var downloadCount : Int = self!.articlesArray.count
 				var index: Int
-				for index = 0; index < self!.articlesArray.count; ++index {
+				for index = 0; index < self!.articlesArray.count; index++ {
 					(self!.articlesArray[index] as! NSMutableDictionary)["featured_image_url"] = self!.findFeaturedImageForArticle(self!.articlesArray[index]["content"] as! NSArray)
+					
+					let imageUrl : String = ((self!.articlesArray[index] as! NSMutableDictionary)["featured_image_url"] as! NSURL).absoluteString
+					
+					let imageDict : NSMutableDictionary = (self!.articlesArray[index] as! NSMutableDictionary)
+					
+					Alamofire.request(.GET, imageUrl, parameters: nil)
+						.responseData { response in
+							imageDict["image_file"] = UIImage(data: response.data!)
+							downloadCount--
+							if (downloadCount == 0 ){
+								NSNotificationCenter.defaultCenter().postNotificationName("ArticlesArrayChanged", object: nil)
+							}
+							
+					}
 				}
 				
-				NSNotificationCenter.defaultCenter().postNotificationName("ArticlesArrayChanged", object: nil)
 				
 			}
 		})
