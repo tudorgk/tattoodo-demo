@@ -38,21 +38,33 @@ class TDAppDataSource: NSObject {
 	
 		TDRequestManager.sharedInstance.getAppData(urlString, after: afterDate!, completion: {[weak self]completion, data in
 			if(completion){
-				self!.articlesArray = CFPropertyListCreateDeepCopy(nil, data as! NSArray, CFPropertyListMutabilityOptions.MutableContainersAndLeaves.rawValue) as! NSMutableArray
-				var downloadCount : Int = self!.articlesArray.count
+				
+				let auxArray : NSMutableArray = CFPropertyListCreateDeepCopy(nil, data as! NSArray, CFPropertyListMutabilityOptions.MutableContainersAndLeaves.rawValue) as! NSMutableArray
+				var downloadCount : Int = auxArray.count
 				var index: Int
-				for index = 0; index < self!.articlesArray.count; index++ {
-					(self!.articlesArray[index] as! NSMutableDictionary)["featured_image_url"] = self!.findFeaturedImageForArticle(self!.articlesArray[index]["content"] as! NSArray)
+				for index = 0; index < auxArray.count; index++ {
+					(auxArray[index] as! NSMutableDictionary)["featured_image_url"] = self!.findFeaturedImageForArticle(auxArray[index]["content"] as! NSArray)
 					
-					let imageUrl : String = ((self!.articlesArray[index] as! NSMutableDictionary)["featured_image_url"] as! NSURL).absoluteString
+					let imageUrl : String = ((auxArray[index] as! NSMutableDictionary)["featured_image_url"] as! NSURL).absoluteString
 					
-					let imageDict : NSMutableDictionary = (self!.articlesArray[index] as! NSMutableDictionary)
+					let imageDict : NSMutableDictionary = (auxArray[index] as! NSMutableDictionary)
 					
 					Alamofire.request(.GET, imageUrl, parameters: nil)
 						.responseData { response in
-							imageDict["image_file"] = UIImage(data: response.data!)
+							var downloadedImage : UIImage! = nil
+							
+							if let responseData : NSData = response.data! as NSData{
+								downloadedImage = UIImage(data: responseData)
+							}else{
+								downloadedImage = UIImage(named: "image1")
+							}
+							
+							downloadedImage = TDImageToolbox.resizeImage(downloadedImage, newSize: CGSizeMake(downloadedImage.size.width/4,downloadedImage.size.height/4))
+							
+							imageDict["image_file"] = downloadedImage
 							downloadCount--
 							if (downloadCount == 0 ){
+								self!.articlesArray = auxArray
 								NSNotificationCenter.defaultCenter().postNotificationName("ArticlesArrayChanged", object: nil)
 							}
 							

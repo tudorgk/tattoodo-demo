@@ -15,6 +15,7 @@ target 'tattoodo-demo' do
 	pod 'Popsicle'
 	pod 'CHTCollectionViewWaterfallLayout'
 	pod 'MPParallaxView'
+	pod 'RMPZoomTransitionAnimator'
 	pod 'Kingfisher'
 	pod 'AMScrollingNavbar'
 	pod 'M13ProgressSuite'

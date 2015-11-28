@@ -17,6 +17,7 @@ PODS:
   - MPParallaxView (0.2.0)
   - pop (1.0.8)
   - Popsicle (2.0.0)
+  - RMPZoomTransitionAnimator (1.0.1)
   - Shimmer (1.0.2)
   - SnapKit (0.18.0)
 
@@ -34,6 +35,7 @@ DEPENDENCIES:
   - MPParallaxView
   - pop
   - Popsicle
+  - RMPZoomTransitionAnimator
   - Shimmer
   - SnapKit
 
@@ -51,6 +53,7 @@ SPEC CHECKSUMS:
   MPParallaxView: 046eebc511e2f90c22cb9ce6f4c10126be257fdc
   pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
   Popsicle: 7f7c1592c951141b13470d3ff04723122a4e4b76
+  RMPZoomTransitionAnimator: 0782863eab1acc50511dbd146cd7df3afc142b54
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
   SnapKit: e1f090a6d47b1dd4bd89b73f72b6746a7835ef3c
 

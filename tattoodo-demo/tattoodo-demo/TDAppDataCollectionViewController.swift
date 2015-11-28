@@ -10,11 +10,13 @@ import UIKit
 import CHTCollectionViewWaterfallLayout
 import AMScrollingNavbar
 import Kingfisher
+import RMPZoomTransitionAnimator
 
 class TDAppDataCollectionViewController: UICollectionViewController, CHTCollectionViewDelegateWaterfallLayout {
 	
 	let dataSource : TDAppDataSource = TDAppDataSource()
 	let placeHolderImage : UIImage = UIImage(named: "image1")!
+	let uiRefresh = UIRefreshControl()
 	
 	//MARK: - View Controller Lifecycle
 	override func viewDidLoad() {
@@ -34,8 +36,11 @@ class TDAppDataCollectionViewController: UICollectionViewController, CHTCollecti
 		//Register nibs
 		registerNibs()
 		
+		addRefreshControl()
 		NSNotificationCenter.defaultCenter().addObserver(self, selector: "reloadAppDataCollectionView:", name: "ArticlesArrayChanged", object: nil)
 	}
+
+	/*
 	
 	override func viewWillAppear(animated: Bool) {
 		super.viewWillAppear(animated)
@@ -52,16 +57,26 @@ class TDAppDataCollectionViewController: UICollectionViewController, CHTCollecti
 			navigationController.stopFollowingScrollView()
 		}
 	}
+
+	*/
+	
 	
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.
 	}
 	
+	func addRefreshControl(){
+		self.uiRefresh.addTarget(self, action: "reloadButtonPressed:", forControlEvents: UIControlEvents.ValueChanged)
+		self.collectionView!.addSubview(self.uiRefresh)
+	}
+	
 	@IBAction func reloadButtonPressed(sender: AnyObject) {
 		let dateToSearch:NSDate = NSDate.init(timeIntervalSince1970: 1446465616)
 		dataSource.retrieveArticlesAfterDate(dateToSearch)
+		self.uiRefresh.endRefreshing()
 	}
+	
 	func reloadAppDataCollectionView(sender: AnyObject?){
 		debugPrint("reloadCollectionView")
 		self.collectionView?.reloadData()
@@ -100,6 +115,7 @@ class TDAppDataCollectionViewController: UICollectionViewController, CHTCollecti
 	
 	//MARK: - CollectionView Delegate Methods
 	
+	
 	//** Number of Cells in the CollectionView */
 	override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		//		return dataSource.articlesArray.count
@@ -136,6 +152,8 @@ class TDAppDataCollectionViewController: UICollectionViewController, CHTCollecti
 		
 		return (self.dataSource.articlesArray.objectAtIndex(indexPath.row).objectForKey("image_file") as! UIImage).size
 	}
+	
+	
 	
 	
 	
