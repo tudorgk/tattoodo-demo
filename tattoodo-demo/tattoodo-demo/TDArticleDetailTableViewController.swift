@@ -7,9 +7,17 @@
 //
 
 import UIKit
+import RMPZoomTransitionAnimator
 
-class TDArticleDetailTableViewController: UITableViewController {
+class TDArticleDetailTableViewController: UIViewController,RMPZoomTransitionAnimating,RMPZoomTransitionDelegate {
+	
+	var destinationImageView: UIImageView?
 
+	var featuredImage : UIImage?
+	
+	@IBOutlet weak var imageViewFeaturedImage: UIImageView!
+	
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,13 +26,19 @@ class TDArticleDetailTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    }
+
+	}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+	
+	override func viewWillAppear(animated: Bool) {
+		self.imageViewFeaturedImage.image = featuredImage
+	}
 
+	/*
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -35,61 +49,28 @@ class TDArticleDetailTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 0
-    }
+    }*/
+	
+	// MARK: - Zoom Transition Animator Delegate
+	func transitionSourceImageView() -> UIImageView! {
+		let imageView: UIImageView = UIImageView(image: self.imageViewFeaturedImage.image)
+		imageView.contentMode = self.imageViewFeaturedImage.contentMode
+		imageView.clipsToBounds = true
+		imageView.userInteractionEnabled = false
+		imageView.frame = self.imageViewFeaturedImage.frame
+		return imageView
+	}
 
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+	func transitionSourceBackgroundColor() -> UIColor! {
+		return self.view.backgroundColor
+	}
+	
+	func transitionDestinationImageViewFrame() -> CGRect {
+		return self.imageViewFeaturedImage!.frame
+	}
+	
+	func zoomTransitionAnimator(animator: RMPZoomTransitionAnimator!, didCompleteTransition didComplete: Bool, animatingSourceImageView imageView: UIImageView!) {
+		self.imageViewFeaturedImage.image = imageView.image
+	}
+	
 }

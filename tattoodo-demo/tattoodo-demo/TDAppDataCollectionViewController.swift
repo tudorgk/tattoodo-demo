@@ -12,11 +12,13 @@ import AMScrollingNavbar
 import Kingfisher
 import RMPZoomTransitionAnimator
 
-class TDAppDataCollectionViewController: UICollectionViewController, CHTCollectionViewDelegateWaterfallLayout {
+class TDAppDataCollectionViewController: UICollectionViewController, CHTCollectionViewDelegateWaterfallLayout ,UINavigationControllerDelegate ,RMPZoomTransitionAnimating, RMPZoomTransitionDelegate {
 	
 	let dataSource : TDAppDataSource = TDAppDataSource()
 	let placeHolderImage : UIImage = UIImage(named: "image1")!
 	let uiRefresh = UIRefreshControl()
+	var selectedIndexParth : NSIndexPath?
+	var destinationImageView : UIImageView?
 	
 	//MARK: - View Controller Lifecycle
 	override func viewDidLoad() {
@@ -29,7 +31,6 @@ class TDAppDataCollectionViewController: UICollectionViewController, CHTCollecti
 		self.collectionView!.dataSource  = self
 		self.collectionView!.delegate = self
 		
-		
 		//Layout setup
 		setupCollectionView()
 		
@@ -40,7 +41,7 @@ class TDAppDataCollectionViewController: UICollectionViewController, CHTCollecti
 		NSNotificationCenter.defaultCenter().addObserver(self, selector: "reloadAppDataCollectionView:", name: "ArticlesArrayChanged", object: nil)
 	}
 
-	/*
+	
 	
 	override func viewWillAppear(animated: Bool) {
 		super.viewWillAppear(animated)
@@ -53,12 +54,13 @@ class TDAppDataCollectionViewController: UICollectionViewController, CHTCollecti
 	override func viewDidDisappear(animated: Bool) {
 		super.viewDidDisappear(animated)
 		
+		
 		if let navigationController = self.navigationController as? ScrollingNavigationController {
 			navigationController.stopFollowingScrollView()
 		}
 	}
 
-	*/
+	
 	
 	
 	override func didReceiveMemoryWarning() {
@@ -153,6 +155,44 @@ class TDAppDataCollectionViewController: UICollectionViewController, CHTCollecti
 		return (self.dataSource.articlesArray.objectAtIndex(indexPath.row).objectForKey("image_file") as! UIImage).size
 	}
 	
+	override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+		// Create the cell and return the cell
+		let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! ImageUICollectionViewCell
+		self.selectedIndexParth = indexPath
+		
+		let articleDetailVC : TDArticleDetailTableViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("articleDetailVC") as! TDArticleDetailTableViewController
+		
+		self.navigationController?.pushViewController(articleDetailVC, animated: true)
+	}
+	
+	// MARK: - Zoom Transition Animator Delegate
+	
+	func transitionSourceImageView() -> UIImageView! {
+		let selectedIndexPath : NSIndexPath = (self.collectionView?.indexPathsForSelectedItems()!.first)!
+		let cell : ImageUICollectionViewCell = self.collectionView?.cellForItemAtIndexPath(selectedIndexPath) as! ImageUICollectionViewCell
+		let imageView : UIImageView = UIImageView(image: cell.image.image)
+		imageView.contentMode = cell.image.contentMode
+		imageView.clipsToBounds = true
+		imageView.userInteractionEnabled = false
+		var frameInSuperView : CGRect = cell.image.convertRect(cell.image.frame,toView: self.collectionView?.superview)
+		frameInSuperView.origin.x -= cell.layoutMargins.left
+		frameInSuperView.origin.y -= cell.layoutMargins.top
+		imageView.frame = frameInSuperView
+		return imageView
+	}
+	
+	func transitionSourceBackgroundColor() -> UIColor! {
+		return self.collectionView?.backgroundColor
+	}
+	
+	func transitionDestinationImageViewFrame() -> CGRect {
+		let selectedIndexPath : NSIndexPath = self.selectedIndexParth!
+		let cell : ImageUICollectionViewCell = self.collectionView?.cellForItemAtIndexPath(selectedIndexPath) as! ImageUICollectionViewCell
+		var frameInSuperView : CGRect = cell.image.convertRect(cell.image.frame,toView: self.collectionView?.superview)
+		frameInSuperView.origin.x -= cell.layoutMargins.left
+		frameInSuperView.origin.y -= cell.layoutMargins.top
+		return frameInSuperView
+	}
 	
 	
 	

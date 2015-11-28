@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Main Navigation View Controller-->
@@ -41,19 +42,7 @@
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hRO-tE-zke">
-                                <rect key="frame" x="0.0" y="64" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <animations/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                                <animations/>
-                            </collectionViewCell>
-                        </cells>
+                        <cells/>
                         <connections>
                             <outlet property="dataSource" destination="Uvu-TF-lGS" id="U2B-Yq-HMe"/>
                             <outlet property="delegate" destination="Uvu-TF-lGS" id="Dgt-IH-6sY"/>
@@ -70,6 +59,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oj5-Rh-f70" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1170" y="84"/>
+        </scene>
+        <!--Article Detail Table View Controller-->
+        <scene sceneID="fB3-2d-p0B">
+            <objects>
+                <viewController storyboardIdentifier="articleDetailVC" id="SIA-kG-90r" customClass="TDArticleDetailTableViewController" customModule="tattoodo_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ppB-cB-lQg"/>
+                        <viewControllerLayoutGuide type="bottom" id="JU1-Js-A5w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V6L-YR-H0H">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wcF-ZT-ruE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JU1-Js-A5w" firstAttribute="top" secondItem="wcF-ZT-ruE" secondAttribute="bottom" id="4kW-3e-L86"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wcF-ZT-ruE" secondAttribute="trailing" constant="-20" id="QYV-jT-2vv"/>
+                            <constraint firstItem="wcF-ZT-ruE" firstAttribute="leading" secondItem="V6L-YR-H0H" secondAttribute="leadingMargin" constant="-20" id="aPv-Zu-4T1"/>
+                            <constraint firstItem="wcF-ZT-ruE" firstAttribute="top" secondItem="ppB-cB-lQg" secondAttribute="bottom" constant="-20" id="i4z-L9-iWg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewFeaturedImage" destination="wcF-ZT-ruE" id="ain-of-eeL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zez-SG-gIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1114" y="819"/>
         </scene>
     </scenes>
 </document>

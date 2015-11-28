@@ -8,12 +8,12 @@
 
 import UIKit
 import AMScrollingNavbar
-
-class TDMainNavigationViewController: ScrollingNavigationController {
+import RMPZoomTransitionAnimator
+class TDMainNavigationViewController: ScrollingNavigationController, UINavigationControllerDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+		self.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -22,7 +22,20 @@ class TDMainNavigationViewController: ScrollingNavigationController {
         // Dispose of any resources that can be recreated.
     }
 	
+	//MARK: UINavigationController Delegate
 	
+	func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+		let animator: RMPZoomTransitionAnimator = RMPZoomTransitionAnimator.init()
+		animator.goingForward = (operation == UINavigationControllerOperation.Push)
+		
+		let source : protocol<RMPZoomTransitionAnimating, RMPZoomTransitionDelegate>= fromVC as! protocol<RMPZoomTransitionAnimating, RMPZoomTransitionDelegate>
+		let destination : protocol<RMPZoomTransitionAnimating, RMPZoomTransitionDelegate>= toVC as! protocol<RMPZoomTransitionAnimating, RMPZoomTransitionDelegate>
+		
+		animator.sourceTransition = source
+		animator.destinationTransition = destination
+		return animator
+	}
+
 	
 
     /*
