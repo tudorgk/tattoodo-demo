@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		0560350E1C063DCD00FE1EBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0560350D1C063DCD00FE1EBA /* AppDelegate.swift */; };
-		056035101C063DCD00FE1EBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0560350F1C063DCD00FE1EBA /* ViewController.swift */; };
+		056035101C063DCD00FE1EBA /* TDAppDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0560350F1C063DCD00FE1EBA /* TDAppDataTableViewController.swift */; };
 		056035131C063DCD00FE1EBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056035111C063DCD00FE1EBA /* Main.storyboard */; };
 		056035151C063DCD00FE1EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 056035141C063DCD00FE1EBA /* Assets.xcassets */; };
 		056035181C063DCD00FE1EBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056035161C063DCD00FE1EBA /* LaunchScreen.storyboard */; };
 		056035231C063DCD00FE1EBA /* tattoodo_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056035221C063DCD00FE1EBA /* tattoodo_demoTests.swift */; };
 		0560352E1C063DCD00FE1EBA /* tattoodo_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0560352D1C063DCD00FE1EBA /* tattoodo_demoUITests.swift */; };
+		05EF2C301C08ECB3006CD4A5 /* TDMainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF2C2F1C08ECB3006CD4A5 /* TDMainNavigationViewController.swift */; };
+		05EF2C331C09B632006CD4A5 /* TDAppDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF2C321C09B632006CD4A5 /* TDAppDataSource.swift */; };
+		05EF2C351C09B8F9006CD4A5 /* TDAppDataCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF2C341C09B8F9006CD4A5 /* TDAppDataCollectionViewController.swift */; };
+		05EF2C3B1C09BAEE006CD4A5 /* ImageUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF2C391C09BAEE006CD4A5 /* ImageUICollectionViewCell.swift */; };
+		05EF2C3C1C09BAEE006CD4A5 /* ImageUICollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05EF2C3A1C09BAEE006CD4A5 /* ImageUICollectionViewCell.xib */; };
+		05EF2C3E1C09BDA4006CD4A5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05EF2C3D1C09BDA4006CD4A5 /* Images.xcassets */; };
 		05FFBC861C07988900ABEFBE /* TDRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FFBC851C07988900ABEFBE /* TDRequestManager.swift */; };
 		05FFBC871C07988900ABEFBE /* TDRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FFBC851C07988900ABEFBE /* TDRequestManager.swift */; };
 		28407A1BDA679AF51AFA4B5B /* Pods_tattoodo_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52ED8021CE26932AFCDCD29 /* Pods_tattoodo_demo.framework */; };
@@ -40,7 +46,7 @@
 /* Begin PBXFileReference section */
 		0560350A1C063DCD00FE1EBA /* tattoodo-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tattoodo-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0560350D1C063DCD00FE1EBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0560350F1C063DCD00FE1EBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0560350F1C063DCD00FE1EBA /* TDAppDataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDAppDataTableViewController.swift; sourceTree = "<group>"; };
 		056035121C063DCD00FE1EBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		056035141C063DCD00FE1EBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		056035171C063DCD00FE1EBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +57,12 @@
 		056035291C063DCD00FE1EBA /* tattoodo-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tattoodo-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0560352D1C063DCD00FE1EBA /* tattoodo_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tattoodo_demoUITests.swift; sourceTree = "<group>"; };
 		0560352F1C063DCD00FE1EBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05EF2C2F1C08ECB3006CD4A5 /* TDMainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDMainNavigationViewController.swift; sourceTree = "<group>"; };
+		05EF2C321C09B632006CD4A5 /* TDAppDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDAppDataSource.swift; sourceTree = "<group>"; };
+		05EF2C341C09B8F9006CD4A5 /* TDAppDataCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDAppDataCollectionViewController.swift; sourceTree = "<group>"; };
+		05EF2C391C09BAEE006CD4A5 /* ImageUICollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUICollectionViewCell.swift; sourceTree = "<group>"; };
+		05EF2C3A1C09BAEE006CD4A5 /* ImageUICollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageUICollectionViewCell.xib; sourceTree = "<group>"; };
+		05EF2C3D1C09BDA4006CD4A5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		05FFBC851C07988900ABEFBE /* TDRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDRequestManager.swift; sourceTree = "<group>"; };
 		08391735BC89484C49802B00 /* Pods-tattoodo-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tattoodo-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tattoodo-demo/Pods-tattoodo-demo.debug.xcconfig"; sourceTree = "<group>"; };
 		4E87D823DCC4B33760042AEA /* Pods-tattoodo-demoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tattoodo-demoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tattoodo-demoTests/Pods-tattoodo-demoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -112,10 +124,12 @@
 		0560350C1C063DCD00FE1EBA /* tattoodo-demo */ = {
 			isa = PBXGroup;
 			children = (
+				05EF2C311C09B612006CD4A5 /* Data Managers */,
 				05FFBC841C07986200ABEFBE /* Tattoodo Api */,
 				0560350D1C063DCD00FE1EBA /* AppDelegate.swift */,
-				0560350F1C063DCD00FE1EBA /* ViewController.swift */,
+				05EF2C2E1C08EC89006CD4A5 /* ViewControllers */,
 				056035111C063DCD00FE1EBA /* Main.storyboard */,
+				05EF2C3D1C09BDA4006CD4A5 /* Images.xcassets */,
 				056035141C063DCD00FE1EBA /* Assets.xcassets */,
 				056035161C063DCD00FE1EBA /* LaunchScreen.storyboard */,
 				056035191C063DCD00FE1EBA /* Info.plist */,
@@ -139,6 +153,34 @@
 				0560352F1C063DCD00FE1EBA /* Info.plist */,
 			);
 			path = "tattoodo-demoUITests";
+			sourceTree = "<group>";
+		};
+		05EF2C2E1C08EC89006CD4A5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				05EF2C381C09BAD8006CD4A5 /* Custom Cell */,
+				0560350F1C063DCD00FE1EBA /* TDAppDataTableViewController.swift */,
+				05EF2C2F1C08ECB3006CD4A5 /* TDMainNavigationViewController.swift */,
+				05EF2C341C09B8F9006CD4A5 /* TDAppDataCollectionViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		05EF2C311C09B612006CD4A5 /* Data Managers */ = {
+			isa = PBXGroup;
+			children = (
+				05EF2C321C09B632006CD4A5 /* TDAppDataSource.swift */,
+			);
+			name = "Data Managers";
+			sourceTree = "<group>";
+		};
+		05EF2C381C09BAD8006CD4A5 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				05EF2C391C09BAEE006CD4A5 /* ImageUICollectionViewCell.swift */,
+				05EF2C3A1C09BAEE006CD4A5 /* ImageUICollectionViewCell.xib */,
+			);
+			name = "Custom Cell";
 			sourceTree = "<group>";
 		};
 		05FFBC841C07986200ABEFBE /* Tattoodo Api */ = {
@@ -280,7 +322,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				056035181C063DCD00FE1EBA /* LaunchScreen.storyboard in Resources */,
+				05EF2C3E1C09BDA4006CD4A5 /* Images.xcassets in Resources */,
 				056035151C063DCD00FE1EBA /* Assets.xcassets in Resources */,
+				05EF2C3C1C09BAEE006CD4A5 /* ImageUICollectionViewCell.xib in Resources */,
 				056035131C063DCD00FE1EBA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,9 +443,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				056035101C063DCD00FE1EBA /* ViewController.swift in Sources */,
+				056035101C063DCD00FE1EBA /* TDAppDataTableViewController.swift in Sources */,
 				0560350E1C063DCD00FE1EBA /* AppDelegate.swift in Sources */,
+				05EF2C3B1C09BAEE006CD4A5 /* ImageUICollectionViewCell.swift in Sources */,
+				05EF2C351C09B8F9006CD4A5 /* TDAppDataCollectionViewController.swift in Sources */,
 				05FFBC861C07988900ABEFBE /* TDRequestManager.swift in Sources */,
+				05EF2C331C09B632006CD4A5 /* TDAppDataSource.swift in Sources */,
+				05EF2C301C08ECB3006CD4A5 /* TDMainNavigationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

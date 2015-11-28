@@ -13,6 +13,7 @@ end
 target 'tattoodo-demo' do
 	generic_pods
 	pod 'Popsicle'
+	pod 'CHTCollectionViewWaterfallLayout'
 	pod 'MPParallaxView'
 	pod 'Kingfisher'
 	pod 'AMScrollingNavbar'
@@ -22,6 +23,7 @@ target 'tattoodo-demo' do
 	pod 'pop'
 	pod 'IQKeyboardManager'
 	pod 'Shimmer'
+	pod 'DGActivityIndicatorView'
 	xcodeproj 'tattoodo-demo'
 	link_with 'tattoodo-demo'
 end

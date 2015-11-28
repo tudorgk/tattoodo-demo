@@ -34,7 +34,6 @@ class tattoodo_demoTests: XCTestCase {
 		
 		requestManager.getAppData("http://blog.tattoodo.com/wp-json/add_posts/v1/app_data", after: dateToSearch,
 			completion: {success,response in
-				
 				if(success){
 					print("success: \(success) with \(response)")
 					expectation.fulfill()

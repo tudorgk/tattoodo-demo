@@ -29,6 +29,8 @@ class TDRequestManager: NSObject {
 		
 		let afterString = rfc3339DateFormatter.stringFromDate(after)
 		
+		
+		UIApplication.sharedApplication().networkActivityIndicatorVisible = true;
 		Alamofire.request(.GET, url, parameters: ["after": afterString])
 			.validate()
 			.responseJSON { response in
@@ -36,19 +38,13 @@ class TDRequestManager: NSObject {
 				case .Success(let data):
 					
 					let array : NSArray = data as! NSArray
-					
-					/*
-					print("request \(response.request) \n")  // original URL request
-					print("response \(response.response) \n") // URL response
-					print("data \(response.data) \n")     // server data
-					print("result \(response.result) \n")   // result of response serialization
-						
-					*/
+					UIApplication.sharedApplication().networkActivityIndicatorVisible = false;
 					if(completion != nil){
 						completion!(true,array)
 					}
 					
 				case .Failure(let error):
+					UIApplication.sharedApplication().networkActivityIndicatorVisible = false;
 					print(error)
 					if(completion != nil){
 						completion!(false,nil)
