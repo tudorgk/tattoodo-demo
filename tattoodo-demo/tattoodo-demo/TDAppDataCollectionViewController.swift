@@ -9,10 +9,12 @@
 import UIKit
 import CHTCollectionViewWaterfallLayout
 import AMScrollingNavbar
+import Kingfisher
+
 class TDAppDataCollectionViewController: UICollectionViewController, CHTCollectionViewDelegateWaterfallLayout {
 	
 	let dataSource : TDAppDataSource = TDAppDataSource()
-	
+	let placeHolderImage : UIImage = UIImage(named: "image1")!
 	
 	//MARK: - View Controller Lifecycle
 	override func viewDidLoad() {
@@ -57,7 +59,8 @@ class TDAppDataCollectionViewController: UICollectionViewController, CHTCollecti
 	}
 	
 	@IBAction func reloadButtonPressed(sender: AnyObject) {
-		dataSource.retrieveArticlesAfterDate(NSDate())
+		let dateToSearch:NSDate = NSDate.init(timeIntervalSince1970: 1446465616)
+		dataSource.retrieveArticlesAfterDate(dateToSearch)
 	}
 	func reloadAppDataCollectionView(sender: AnyObject?){
 		debugPrint("reloadCollectionView")
@@ -111,7 +114,10 @@ class TDAppDataCollectionViewController: UICollectionViewController, CHTCollecti
 		let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! ImageUICollectionViewCell
 		
 		// Add image to cell
-		cell.image.image = UIImage(named: "image1")
+		cell.image.kf_setImageWithURL(self.dataSource.articlesArray.objectAtIndex(indexPath.row).objectForKey("featured_image_url") as! NSURL, placeholderImage: self.placeHolderImage, optionsInfo: [], completionHandler: {dlImage, error, cacheType, imageURL in
+			cell.image.image = dlImage
+		})
+	
 		return cell
 	}
 	
