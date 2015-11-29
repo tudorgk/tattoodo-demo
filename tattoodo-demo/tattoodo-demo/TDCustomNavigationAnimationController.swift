@@ -6,7 +6,8 @@ import UIKit
 class TDCustomNavigationAnimationController: NSObject, UIViewControllerAnimatedTransitioning {
     
     var reverse: Bool = false
-    
+	
+	
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return 0.5
     }

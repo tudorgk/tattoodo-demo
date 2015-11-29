@@ -33,4 +33,9 @@ class TDMainNavigationViewController: ScrollingNavigationController, UINavigatio
 		return customNavigationController
 	}
 	
+	func navigationController(navigationController: UINavigationController, interactionControllerForAnimationController animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+		return customInteractionController.transitionInProgress ? customInteractionController : nil
+	}
+
+	
 }

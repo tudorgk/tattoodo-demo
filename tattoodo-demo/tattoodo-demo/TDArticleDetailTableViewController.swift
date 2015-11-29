@@ -9,22 +9,19 @@
 import UIKit
 import RMPZoomTransitionAnimator
 
-class TDArticleDetailTableViewController: UIViewController,RMPZoomTransitionAnimating,RMPZoomTransitionDelegate {
+class TDArticleDetailTableViewController: UIViewController {
 
 	
 	@IBOutlet weak var imageViewFeaturedImage: UIImageView!
-	
+	var articleData : NSMutableDictionary?
 	
     override func viewDidLoad() {
         super.viewDidLoad()
 
 		self.imageViewFeaturedImage.contentMode = UIViewContentMode.ScaleAspectFill
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-
+		self.imageViewFeaturedImage.image = self.articleData!["image_file"] as? UIImage
+		self.title = self.articleData!["title"] as? String
+		
 	}
 
     override func didReceiveMemoryWarning() {
@@ -33,41 +30,8 @@ class TDArticleDetailTableViewController: UIViewController,RMPZoomTransitionAnim
     }
 	
 	override func viewWillAppear(animated: Bool) {
+		super.viewWillAppear(animated)
+	
 	}
 
-	/*
-    // MARK: - Table view data source
-
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }*/
-	
-	// MARK: - Zoom Transition Animator Delegate
-	func transitionSourceImageView() -> UIImageView! {
-		let imageView: UIImageView = UIImageView(image: self.imageViewFeaturedImage.image)
-		imageView.contentMode = self.imageViewFeaturedImage.contentMode
-		imageView.clipsToBounds = true
-		imageView.userInteractionEnabled = false
-		imageView.frame = self.imageViewFeaturedImage.convertRect(self.imageViewFeaturedImage.frame, toView: self.imageViewFeaturedImage.superview)
-		return imageView
-	}
-
-	func transitionSourceBackgroundColor() -> UIColor! {
-		return self.view.backgroundColor
-	}
-	
-	func transitionDestinationImageViewFrame() -> CGRect {
-		return self.imageViewFeaturedImage!.frame
-	}
-	
-	func zoomTransitionAnimator(animator: RMPZoomTransitionAnimator!, didCompleteTransition didComplete: Bool, animatingSourceImageView imageView: UIImageView!) {
-		self.imageViewFeaturedImage.image = imageView.image
-	}
-	
 }

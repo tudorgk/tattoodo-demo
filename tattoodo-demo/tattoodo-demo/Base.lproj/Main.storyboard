@@ -69,7 +69,7 @@
                         <viewControllerLayoutGuide type="top" id="ppB-cB-lQg"/>
                         <viewControllerLayoutGuide type="bottom" id="JU1-Js-A5w"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="V6L-YR-H0H">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="V6L-YR-H0H">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -79,7 +79,7 @@
                             </imageView>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="JU1-Js-A5w" firstAttribute="top" secondItem="wcF-ZT-ruE" secondAttribute="bottom" id="4kW-3e-L86"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wcF-ZT-ruE" secondAttribute="trailing" constant="-20" id="QYV-jT-2vv"/>

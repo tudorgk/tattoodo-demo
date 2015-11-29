@@ -30,7 +30,7 @@ class TDAppDataCollectionViewController: UICollectionViewController, CHTCollecti
 		// Attach datasource and delegate
 		self.collectionView!.dataSource  = self
 		self.collectionView!.delegate = self
-		
+		self.clearsSelectionOnViewWillAppear = true	
 		//Layout setup
 		setupCollectionView()
 		
@@ -161,7 +161,10 @@ class TDAppDataCollectionViewController: UICollectionViewController, CHTCollecti
 		self.selectedIndexParth = indexPath
 		
 		let articleDetailVC : TDArticleDetailTableViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("articleDetailVC") as! TDArticleDetailTableViewController
-		articleDetailVC.view.setNeedsDisplay()
+		articleDetailVC.articleData = NSMutableDictionary(dictionary: (self.dataSource.articlesArray.objectAtIndex(indexPath.row) as? NSMutableDictionary)!)
+		
+		cell.selected = false
+		
 		self.navigationController?.pushViewController(articleDetailVC, animated: true)
 	}
 	
