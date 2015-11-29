@@ -181,29 +181,29 @@
                                     <outlet property="labelArticleText" destination="NE7-2o-yy8" id="vC5-tH-Xbn"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="imageCell" rowHeight="160" id="Hbo-YR-iM9" customClass="TDArticleDetailImageTableViewCell" customModule="tattoodo_demo" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="600" height="160"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="imageCell" rowHeight="200" id="Hbo-YR-iM9" customClass="TDArticleDetailImageTableViewCell" customModule="tattoodo_demo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="600" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hbo-YR-iM9" id="rJv-cm-W7Y">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="159"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="199"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yqj-2T-Ro8">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="159"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rQc-mS-k9y">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="199"/>
                                             <animations/>
                                         </imageView>
                                     </subviews>
                                     <animations/>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="yqj-2T-Ro8" secondAttribute="trailing" constant="-8" id="Dkj-Tf-nT4"/>
-                                        <constraint firstItem="yqj-2T-Ro8" firstAttribute="leading" secondItem="rJv-cm-W7Y" secondAttribute="leadingMargin" constant="-8" id="TNi-OT-u62"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="yqj-2T-Ro8" secondAttribute="bottom" constant="-8" id="ciu-4p-6Jh"/>
-                                        <constraint firstItem="yqj-2T-Ro8" firstAttribute="top" secondItem="rJv-cm-W7Y" secondAttribute="topMargin" constant="-8" id="rNc-Um-ePS"/>
+                                        <constraint firstItem="rQc-mS-k9y" firstAttribute="top" secondItem="rJv-cm-W7Y" secondAttribute="topMargin" constant="-8" id="Ftl-vG-Moi"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="rQc-mS-k9y" secondAttribute="bottom" constant="-8" id="eiW-Qa-kQZ"/>
+                                        <constraint firstItem="rQc-mS-k9y" firstAttribute="leading" secondItem="rJv-cm-W7Y" secondAttribute="leadingMargin" constant="-8" id="nvy-rm-OD9"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="rQc-mS-k9y" secondAttribute="trailing" constant="-8" id="sST-lg-CIC"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
-                                    <outlet property="imageViewArticleImage" destination="yqj-2T-Ro8" id="prX-U1-Jow"/>
+                                    <outlet property="imageViewArticleImage" destination="rQc-mS-k9y" id="otP-RT-UKs"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

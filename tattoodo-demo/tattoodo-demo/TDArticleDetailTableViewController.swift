@@ -12,6 +12,7 @@ class TDArticleDetailTableViewController: UITableViewController {
 
 	@IBOutlet weak var imageViewFeaturedImage: UIImageView!
 	var articleData : NSMutableDictionary?
+	let placeHolderImage : UIImage = UIImage(named: "placeholder1")!
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,17 +58,29 @@ class TDArticleDetailTableViewController: UITableViewController {
 			cell.imageViewArticleImage.kf_setImageWithURL(NSURL(string:
 				((((self.articleData!["content"] as! NSMutableArray))
 					.objectAtIndex(indexPath.row) as! NSDictionary)
-					.objectForKey("image_url") as! String))!)
-
+					.objectForKey("image_url") as! String))!,placeholderImage: self.placeHolderImage)
+			
+			
 			return cell
 		}
 	
 	}
 	
 	override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-		return 160;
+		return 200;
+	}
+/*
+	override func scrollViewDidScroll(scrollView: UIScrollView) {
+		// Get visible cells on table view.
+		
+		let visibleCells = self.tableView.visibleCells
+		for cell in visibleCells {
+			if cell.isKindOfClass(TDArticleDetailImageTableViewCell) {
+				(cell as! TDArticleDetailImageTableViewCell).cellOnTableViewDidScrollOnView(tableView, view: self.view)
+			}
+		}
 	}
 
-
+*/
 
 }
