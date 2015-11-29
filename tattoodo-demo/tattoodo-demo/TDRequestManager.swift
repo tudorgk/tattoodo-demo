@@ -30,21 +30,18 @@ class TDRequestManager: NSObject {
 		let afterString = rfc3339DateFormatter.stringFromDate(after)
 		
 		
-		UIApplication.sharedApplication().networkActivityIndicatorVisible = true;
+		
 		Alamofire.request(.GET, url, parameters: ["after": afterString])
 			.validate()
 			.responseJSON { response in
 				switch response.result {
 				case .Success(let data):
-					
 					let array : NSArray = data as! NSArray
-					UIApplication.sharedApplication().networkActivityIndicatorVisible = false;
 					if(completion != nil){
 						completion!(true,array)
 					}
 					
 				case .Failure(let error):
-					UIApplication.sharedApplication().networkActivityIndicatorVisible = false;
 					print(error)
 					if(completion != nil){
 						completion!(false,nil)

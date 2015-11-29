@@ -35,7 +35,7 @@ class TDAppDataSource: NSObject {
 		}else{
 			afterDate = date
 		}
-	
+		UIApplication.sharedApplication().networkActivityIndicatorVisible = true;
 		TDRequestManager.sharedInstance.getAppData(urlString, after: afterDate!, completion: {[weak self]completion, data in
 			if(completion){
 				
@@ -65,6 +65,7 @@ class TDAppDataSource: NSObject {
 							downloadCount--
 							if (downloadCount == 0 ){
 								self!.articlesArray = auxArray
+								UIApplication.sharedApplication().networkActivityIndicatorVisible = false;
 								NSNotificationCenter.defaultCenter().postNotificationName("ArticlesArrayChanged", object: nil)
 							}
 							

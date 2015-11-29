@@ -11,6 +11,9 @@ import AMScrollingNavbar
 import RMPZoomTransitionAnimator
 class TDMainNavigationViewController: ScrollingNavigationController, UINavigationControllerDelegate{
 
+	let customNavigationController : TDCustomNavigationAnimationController = TDCustomNavigationAnimationController()
+	let customInteractionController : TDCustomInteractionController = TDCustomInteractionController()
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 		self.delegate = self
@@ -21,31 +24,13 @@ class TDMainNavigationViewController: ScrollingNavigationController, UINavigatio
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-	
-	//MARK: UINavigationController Delegate
-	
+
 	func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-		let animator: RMPZoomTransitionAnimator = RMPZoomTransitionAnimator.init()
-		animator.goingForward = (operation == UINavigationControllerOperation.Push)
-		
-		let source : protocol<RMPZoomTransitionAnimating, RMPZoomTransitionDelegate>= fromVC as! protocol<RMPZoomTransitionAnimating, RMPZoomTransitionDelegate>
-		let destination : protocol<RMPZoomTransitionAnimating, RMPZoomTransitionDelegate>= toVC as! protocol<RMPZoomTransitionAnimating, RMPZoomTransitionDelegate>
-		
-		animator.sourceTransition = source
-		animator.destinationTransition = destination
-		return animator
+		if operation == .Push {
+			customInteractionController.attachToViewController(toVC)
+		}
+		customNavigationController.reverse = operation == .Pop
+		return customNavigationController
 	}
-
 	
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

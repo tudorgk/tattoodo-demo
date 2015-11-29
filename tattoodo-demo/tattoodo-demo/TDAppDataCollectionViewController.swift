@@ -161,7 +161,7 @@ class TDAppDataCollectionViewController: UICollectionViewController, CHTCollecti
 		self.selectedIndexParth = indexPath
 		
 		let articleDetailVC : TDArticleDetailTableViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("articleDetailVC") as! TDArticleDetailTableViewController
-		
+		articleDetailVC.view.setNeedsDisplay()
 		self.navigationController?.pushViewController(articleDetailVC, animated: true)
 	}
 	
@@ -174,9 +174,7 @@ class TDAppDataCollectionViewController: UICollectionViewController, CHTCollecti
 		imageView.contentMode = cell.image.contentMode
 		imageView.clipsToBounds = true
 		imageView.userInteractionEnabled = false
-		var frameInSuperView : CGRect = cell.image.convertRect(cell.image.frame,toView: self.collectionView?.superview)
-		frameInSuperView.origin.x -= cell.layoutMargins.left
-		frameInSuperView.origin.y -= cell.layoutMargins.top
+		let frameInSuperView : CGRect = cell.image.convertRect(cell.image.frame,toView: self.collectionView?.superview)
 		imageView.frame = frameInSuperView
 		return imageView
 	}
@@ -188,9 +186,7 @@ class TDAppDataCollectionViewController: UICollectionViewController, CHTCollecti
 	func transitionDestinationImageViewFrame() -> CGRect {
 		let selectedIndexPath : NSIndexPath = self.selectedIndexParth!
 		let cell : ImageUICollectionViewCell = self.collectionView?.cellForItemAtIndexPath(selectedIndexPath) as! ImageUICollectionViewCell
-		var frameInSuperView : CGRect = cell.image.convertRect(cell.image.frame,toView: self.collectionView?.superview)
-		frameInSuperView.origin.x -= cell.layoutMargins.left
-		frameInSuperView.origin.y -= cell.layoutMargins.top
+		let frameInSuperView : CGRect = cell.image.convertRect(cell.image.frame,toView: self.collectionView?.superview)
 		return frameInSuperView
 	}
 	

@@ -10,10 +10,7 @@ import UIKit
 import RMPZoomTransitionAnimator
 
 class TDArticleDetailTableViewController: UIViewController,RMPZoomTransitionAnimating,RMPZoomTransitionDelegate {
-	
-	var destinationImageView: UIImageView?
 
-	var featuredImage : UIImage?
 	
 	@IBOutlet weak var imageViewFeaturedImage: UIImageView!
 	
@@ -21,6 +18,7 @@ class TDArticleDetailTableViewController: UIViewController,RMPZoomTransitionAnim
     override func viewDidLoad() {
         super.viewDidLoad()
 
+		self.imageViewFeaturedImage.contentMode = UIViewContentMode.ScaleAspectFill
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -35,7 +33,6 @@ class TDArticleDetailTableViewController: UIViewController,RMPZoomTransitionAnim
     }
 	
 	override func viewWillAppear(animated: Bool) {
-		self.imageViewFeaturedImage.image = featuredImage
 	}
 
 	/*
@@ -57,7 +54,7 @@ class TDArticleDetailTableViewController: UIViewController,RMPZoomTransitionAnim
 		imageView.contentMode = self.imageViewFeaturedImage.contentMode
 		imageView.clipsToBounds = true
 		imageView.userInteractionEnabled = false
-		imageView.frame = self.imageViewFeaturedImage.frame
+		imageView.frame = self.imageViewFeaturedImage.convertRect(self.imageViewFeaturedImage.frame, toView: self.imageViewFeaturedImage.superview)
 		return imageView
 	}
 

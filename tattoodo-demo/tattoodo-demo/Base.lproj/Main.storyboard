@@ -10,6 +10,7 @@
         <scene sceneID="HXw-us-qrc">
             <objects>
                 <navigationController id="jpl-Dt-n86" customClass="TDMainNavigationViewController" customModule="tattoodo_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tgP-Jx-tvT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
