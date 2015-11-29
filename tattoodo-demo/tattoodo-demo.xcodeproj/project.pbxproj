@@ -32,12 +32,15 @@
 		05EF2C4F1C09D4E2006CD4A5 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF2C451C09D4E2006CD4A5 /* SessionDelegate.swift */; };
 		05EF2C521C09E10B006CD4A5 /* TDImageToolbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF2C511C09E10B006CD4A5 /* TDImageToolbox.swift */; };
 		05EF2C531C09E10B006CD4A5 /* TDImageToolbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF2C511C09E10B006CD4A5 /* TDImageToolbox.swift */; };
-		05EF2C551C0A1BA0006CD4A5 /* TDArticleDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF2C541C0A1BA0006CD4A5 /* TDArticleDetailTableViewController.swift */; };
+		05EF2C551C0A1BA0006CD4A5 /* TDArticleDetailCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF2C541C0A1BA0006CD4A5 /* TDArticleDetailCollectionViewController.swift */; };
 		05EF2C571C0B0BE2006CD4A5 /* TDCustomNavigationAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF2C561C0B0BE2006CD4A5 /* TDCustomNavigationAnimationController.swift */; };
 		05EF2C591C0B0CDC006CD4A5 /* TDCustomInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF2C581C0B0CDC006CD4A5 /* TDCustomInteractionController.swift */; };
 		05EF2C5D1C0B23F2006CD4A5 /* TDCollectionParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF2C5C1C0B23F2006CD4A5 /* TDCollectionParallaxHeader.swift */; };
 		05EF2C611C0B3189006CD4A5 /* TDArticleDetailTextCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF2C601C0B3189006CD4A5 /* TDArticleDetailTextCollectionViewCell.swift */; };
 		05EF2C631C0B56F6006CD4A5 /* TDArticleDetailImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF2C621C0B56F6006CD4A5 /* TDArticleDetailImageCollectionViewCell.swift */; };
+		05EF2C671C0B65B3006CD4A5 /* TDArticleDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF2C661C0B65B3006CD4A5 /* TDArticleDetailTableViewController.swift */; };
+		05EF2C691C0B6626006CD4A5 /* TDArticleDetailTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF2C681C0B6626006CD4A5 /* TDArticleDetailTextTableViewCell.swift */; };
+		05EF2C6B1C0B6634006CD4A5 /* TDArticleDetailImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF2C6A1C0B6634006CD4A5 /* TDArticleDetailImageTableViewCell.swift */; };
 		05FFBC861C07988900ABEFBE /* TDRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FFBC851C07988900ABEFBE /* TDRequestManager.swift */; };
 		05FFBC871C07988900ABEFBE /* TDRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FFBC851C07988900ABEFBE /* TDRequestManager.swift */; };
 		28407A1BDA679AF51AFA4B5B /* Pods_tattoodo_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52ED8021CE26932AFCDCD29 /* Pods_tattoodo_demo.framework */; };
@@ -88,12 +91,15 @@
 		05EF2C441C09D4E2006CD4A5 /* ScoutOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoutOperation.swift; sourceTree = "<group>"; };
 		05EF2C451C09D4E2006CD4A5 /* SessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
 		05EF2C511C09E10B006CD4A5 /* TDImageToolbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDImageToolbox.swift; sourceTree = "<group>"; };
-		05EF2C541C0A1BA0006CD4A5 /* TDArticleDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDArticleDetailTableViewController.swift; sourceTree = "<group>"; };
+		05EF2C541C0A1BA0006CD4A5 /* TDArticleDetailCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDArticleDetailCollectionViewController.swift; sourceTree = "<group>"; };
 		05EF2C561C0B0BE2006CD4A5 /* TDCustomNavigationAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDCustomNavigationAnimationController.swift; sourceTree = "<group>"; };
 		05EF2C581C0B0CDC006CD4A5 /* TDCustomInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDCustomInteractionController.swift; sourceTree = "<group>"; };
 		05EF2C5C1C0B23F2006CD4A5 /* TDCollectionParallaxHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDCollectionParallaxHeader.swift; sourceTree = "<group>"; };
 		05EF2C601C0B3189006CD4A5 /* TDArticleDetailTextCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDArticleDetailTextCollectionViewCell.swift; sourceTree = "<group>"; };
 		05EF2C621C0B56F6006CD4A5 /* TDArticleDetailImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDArticleDetailImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		05EF2C661C0B65B3006CD4A5 /* TDArticleDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDArticleDetailTableViewController.swift; sourceTree = "<group>"; };
+		05EF2C681C0B6626006CD4A5 /* TDArticleDetailTextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDArticleDetailTextTableViewCell.swift; sourceTree = "<group>"; };
+		05EF2C6A1C0B6634006CD4A5 /* TDArticleDetailImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDArticleDetailImageTableViewCell.swift; sourceTree = "<group>"; };
 		05FFBC851C07988900ABEFBE /* TDRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDRequestManager.swift; sourceTree = "<group>"; };
 		08391735BC89484C49802B00 /* Pods-tattoodo-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tattoodo-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tattoodo-demo/Pods-tattoodo-demo.debug.xcconfig"; sourceTree = "<group>"; };
 		4E87D823DCC4B33760042AEA /* Pods-tattoodo-demoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tattoodo-demoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tattoodo-demoTests/Pods-tattoodo-demoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -271,6 +277,8 @@
 			children = (
 				05EF2C601C0B3189006CD4A5 /* TDArticleDetailTextCollectionViewCell.swift */,
 				05EF2C621C0B56F6006CD4A5 /* TDArticleDetailImageCollectionViewCell.swift */,
+				05EF2C681C0B6626006CD4A5 /* TDArticleDetailTextTableViewCell.swift */,
+				05EF2C6A1C0B6634006CD4A5 /* TDArticleDetailImageTableViewCell.swift */,
 			);
 			name = "Article Details Custom Cells";
 			sourceTree = "<group>";
@@ -278,7 +286,8 @@
 		05EF2C641C0B6524006CD4A5 /* Detail View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				05EF2C541C0A1BA0006CD4A5 /* TDArticleDetailTableViewController.swift */,
+				05EF2C541C0A1BA0006CD4A5 /* TDArticleDetailCollectionViewController.swift */,
+				05EF2C661C0B65B3006CD4A5 /* TDArticleDetailTableViewController.swift */,
 			);
 			name = "Detail View Controllers";
 			sourceTree = "<group>";
@@ -555,19 +564,22 @@
 			files = (
 				056035101C063DCD00FE1EBA /* TDAppDataTableViewController.swift in Sources */,
 				0560350E1C063DCD00FE1EBA /* AppDelegate.swift in Sources */,
+				05EF2C6B1C0B6634006CD4A5 /* TDArticleDetailImageTableViewCell.swift in Sources */,
 				05EF2C631C0B56F6006CD4A5 /* TDArticleDetailImageCollectionViewCell.swift in Sources */,
 				05EF2C4C1C09D4E2006CD4A5 /* ScoutOperation.swift in Sources */,
 				05EF2C611C0B3189006CD4A5 /* TDArticleDetailTextCollectionViewCell.swift in Sources */,
 				05EF2C5D1C0B23F2006CD4A5 /* TDCollectionParallaxHeader.swift in Sources */,
-				05EF2C551C0A1BA0006CD4A5 /* TDArticleDetailTableViewController.swift in Sources */,
+				05EF2C551C0A1BA0006CD4A5 /* TDArticleDetailCollectionViewController.swift in Sources */,
 				05EF2C3B1C09BAEE006CD4A5 /* ImageUICollectionViewCell.swift in Sources */,
 				05EF2C571C0B0BE2006CD4A5 /* TDCustomNavigationAnimationController.swift in Sources */,
+				05EF2C671C0B65B3006CD4A5 /* TDArticleDetailTableViewController.swift in Sources */,
 				05EF2C351C09B8F9006CD4A5 /* TDAppDataCollectionViewController.swift in Sources */,
 				05EF2C591C0B0CDC006CD4A5 /* TDCustomInteractionController.swift in Sources */,
 				05EF2C521C09E10B006CD4A5 /* TDImageToolbox.swift in Sources */,
 				05EF2C461C09D4E2006CD4A5 /* ImageParser.swift in Sources */,
 				05FFBC861C07988900ABEFBE /* TDRequestManager.swift in Sources */,
 				05EF2C481C09D4E2006CD4A5 /* ImageScout.swift in Sources */,
+				05EF2C691C0B6626006CD4A5 /* TDArticleDetailTextTableViewCell.swift in Sources */,
 				05EF2C331C09B632006CD4A5 /* TDAppDataSource.swift in Sources */,
 				05EF2C301C08ECB3006CD4A5 /* TDMainNavigationViewController.swift in Sources */,
 				05EF2C4E1C09D4E2006CD4A5 /* SessionDelegate.swift in Sources */,

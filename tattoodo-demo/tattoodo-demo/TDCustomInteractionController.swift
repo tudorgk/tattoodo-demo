@@ -15,7 +15,7 @@ class TDCustomInteractionController: UIPercentDrivenInteractiveTransition {
 	
 	func attachToViewController(viewController: UIViewController) {
 		navigationController = viewController.navigationController
-		setupGestureRecognizer(viewController.view)
+		setupGestureRecognizer(navigationController.view)
 	}
 	
 	private func setupGestureRecognizer(view: UIView) {
@@ -23,7 +23,7 @@ class TDCustomInteractionController: UIPercentDrivenInteractiveTransition {
 	}
 	
 	func handlePanGesture(gestureRecognizer: UIPanGestureRecognizer) {
-		let viewTranslation = gestureRecognizer.translationInView(gestureRecognizer.view!.superview!)
+		let viewTranslation = gestureRecognizer.translationInView(gestureRecognizer.view!)
 		switch gestureRecognizer.state {
 		case .Began:
 			transitionInProgress = true

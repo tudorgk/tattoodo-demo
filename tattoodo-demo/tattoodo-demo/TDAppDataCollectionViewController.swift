@@ -154,8 +154,13 @@ class TDAppDataCollectionViewController: UICollectionViewController, CHTCollecti
 		let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! ImageUICollectionViewCell
 		self.selectedIndexParth = indexPath
 		
-		let articleDetailVC : TDArticleDetailTableViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("articleDetailVC") as! TDArticleDetailTableViewController
+		/*
+		let articleDetailVC : TDArticleDetailCollectionViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("articleDetailVC") as! TDArticleDetailCollectionViewController
 		articleDetailVC.articleData = NSMutableDictionary(dictionary: (self.dataSource.articlesArray.objectAtIndex(indexPath.row) as? NSMutableDictionary)!)
+		*/
+		let articleDetailVC : TDArticleDetailTableViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("articleDetailTableVC") as! TDArticleDetailTableViewController
+		articleDetailVC.articleData = NSMutableDictionary(dictionary: (self.dataSource.articlesArray.objectAtIndex(indexPath.row) as? NSMutableDictionary)!)
+		
 		
 		cell.selected = false
 		
