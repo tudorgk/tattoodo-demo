@@ -9,7 +9,7 @@
 import UIKit
 import CSStickyHeaderFlowLayout
 import Kingfisher
-class TDArticleDetailTableViewController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
+class TDArticleDetailCollectionViewController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
 
 	
 	@IBOutlet weak var imageViewFeaturedImage: UIImageView!
