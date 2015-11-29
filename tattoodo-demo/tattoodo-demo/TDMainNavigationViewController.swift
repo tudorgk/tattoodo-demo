@@ -8,7 +8,6 @@
 
 import UIKit
 import AMScrollingNavbar
-import RMPZoomTransitionAnimator
 class TDMainNavigationViewController: ScrollingNavigationController, UINavigationControllerDelegate{
 
 	let customNavigationController : TDCustomNavigationAnimationController = TDCustomNavigationAnimationController()

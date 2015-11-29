@@ -10,9 +10,8 @@ import UIKit
 import CHTCollectionViewWaterfallLayout
 import AMScrollingNavbar
 import Kingfisher
-import RMPZoomTransitionAnimator
 
-class TDAppDataCollectionViewController: UICollectionViewController, CHTCollectionViewDelegateWaterfallLayout ,UINavigationControllerDelegate ,RMPZoomTransitionAnimating, RMPZoomTransitionDelegate {
+class TDAppDataCollectionViewController: UICollectionViewController, CHTCollectionViewDelegateWaterfallLayout ,UINavigationControllerDelegate {
 	
 	let dataSource : TDAppDataSource = TDAppDataSource()
 	let placeHolderImage : UIImage = UIImage(named: "image1")!
@@ -133,12 +132,7 @@ class TDAppDataCollectionViewController: UICollectionViewController, CHTCollecti
 		
 		// Add image to cell
 		cell.image.image = self.dataSource.articlesArray.objectAtIndex(indexPath.row).objectForKey("image_file") as? UIImage
-		
-		/*
-		cell.image.kf_setImageWithURL(self.dataSource.articlesArray.objectAtIndex(indexPath.row).objectForKey("featured_image_url") as! NSURL, placeholderImage: self.placeHolderImage, optionsInfo: [], completionHandler: {dlImage, error, cacheType, imageURL in
-			cell.image.image = dlImage
-		})
-		*/
+		cell.labelTitle.text = self.dataSource.articlesArray.objectAtIndex(indexPath.row).objectForKey("title") as? String
 		return cell
 	}
 	
@@ -167,32 +161,6 @@ class TDAppDataCollectionViewController: UICollectionViewController, CHTCollecti
 		
 		self.navigationController?.pushViewController(articleDetailVC, animated: true)
 	}
-	
-	// MARK: - Zoom Transition Animator Delegate
-	
-	func transitionSourceImageView() -> UIImageView! {
-		let selectedIndexPath : NSIndexPath = (self.collectionView?.indexPathsForSelectedItems()!.first)!
-		let cell : ImageUICollectionViewCell = self.collectionView?.cellForItemAtIndexPath(selectedIndexPath) as! ImageUICollectionViewCell
-		let imageView : UIImageView = UIImageView(image: cell.image.image)
-		imageView.contentMode = cell.image.contentMode
-		imageView.clipsToBounds = true
-		imageView.userInteractionEnabled = false
-		let frameInSuperView : CGRect = cell.image.convertRect(cell.image.frame,toView: self.collectionView?.superview)
-		imageView.frame = frameInSuperView
-		return imageView
-	}
-	
-	func transitionSourceBackgroundColor() -> UIColor! {
-		return self.collectionView?.backgroundColor
-	}
-	
-	func transitionDestinationImageViewFrame() -> CGRect {
-		let selectedIndexPath : NSIndexPath = self.selectedIndexParth!
-		let cell : ImageUICollectionViewCell = self.collectionView?.cellForItemAtIndexPath(selectedIndexPath) as! ImageUICollectionViewCell
-		let frameInSuperView : CGRect = cell.image.convertRect(cell.image.frame,toView: self.collectionView?.superview)
-		return frameInSuperView
-	}
-	
 	
 	
 	

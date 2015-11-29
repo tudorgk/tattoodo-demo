@@ -62,38 +62,86 @@
             <point key="canvasLocation" x="1170" y="84"/>
         </scene>
         <!--Article Detail Table View Controller-->
-        <scene sceneID="fB3-2d-p0B">
+        <scene sceneID="dMj-eg-N1h">
             <objects>
-                <viewController storyboardIdentifier="articleDetailVC" id="SIA-kG-90r" customClass="TDArticleDetailTableViewController" customModule="tattoodo_demo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ppB-cB-lQg"/>
-                        <viewControllerLayoutGuide type="bottom" id="JU1-Js-A5w"/>
-                    </layoutGuides>
-                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="V6L-YR-H0H">
+                <collectionViewController storyboardIdentifier="articleDetailVC" id="VlL-vq-lnY" customClass="TDArticleDetailTableViewController" customModule="tattoodo_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="emL-MY-N2X">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wcF-ZT-ruE">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <animations/>
-                            </imageView>
-                        </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="JU1-Js-A5w" firstAttribute="top" secondItem="wcF-ZT-ruE" secondAttribute="bottom" id="4kW-3e-L86"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wcF-ZT-ruE" secondAttribute="trailing" constant="-20" id="QYV-jT-2vv"/>
-                            <constraint firstItem="wcF-ZT-ruE" firstAttribute="leading" secondItem="V6L-YR-H0H" secondAttribute="leadingMargin" constant="-20" id="aPv-Zu-4T1"/>
-                            <constraint firstItem="wcF-ZT-ruE" firstAttribute="top" secondItem="ppB-cB-lQg" secondAttribute="bottom" constant="-20" id="i4z-L9-iWg"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="imageViewFeaturedImage" destination="wcF-ZT-ruE" id="ain-of-eeL"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zez-SG-gIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="z9g-Cg-HZE" customClass="CSStickyHeaderFlowLayout">
+                            <size key="itemSize" width="320" height="126"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="textCell" id="RP9-uK-ovq" customClass="TDArticleDetailTextCollectionViewCell" customModule="tattoodo_demo" customModuleProvider="target">
+                                <rect key="frame" x="140" y="0.0" width="320" height="126"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEs-D5-BBP">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" secondItem="LEs-D5-BBP" secondAttribute="height" id="6wE-Wd-iQp"/>
+                                    <constraint firstItem="LEs-D5-BBP" firstAttribute="top" secondItem="RP9-uK-ovq" secondAttribute="topMargin" constant="-8" id="Rnq-5R-Ngp"/>
+                                    <constraint firstItem="LEs-D5-BBP" firstAttribute="leading" secondItem="RP9-uK-ovq" secondAttribute="leadingMargin" constant="-8" id="jZ7-SB-i4f"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="LEs-D5-BBP" secondAttribute="trailing" constant="-8" id="jbL-C5-0uV"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="labelArticleText" destination="LEs-D5-BBP" id="J1r-1n-IWw"/>
+                                </connections>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageCell" id="wnS-zf-aQb" customClass="TDArticleDetailImageCollectionViewCell" customModule="tattoodo_demo" customModuleProvider="target">
+                                <rect key="frame" x="140" y="126" width="320" height="126"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y9C-Ka-bnm">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+                                            <animations/>
+                                        </imageView>
+                                    </subviews>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstItem="Y9C-Ka-bnm" firstAttribute="width" secondItem="wnS-zf-aQb" secondAttribute="width" id="6kB-gW-7i3"/>
+                                    <constraint firstItem="Y9C-Ka-bnm" firstAttribute="height" secondItem="wnS-zf-aQb" secondAttribute="height" id="bWi-8Z-qv5"/>
+                                    <constraint firstItem="Y9C-Ka-bnm" firstAttribute="centerY" secondItem="wnS-zf-aQb" secondAttribute="centerY" id="huG-6N-A43"/>
+                                    <constraint firstItem="Y9C-Ka-bnm" firstAttribute="centerX" secondItem="wnS-zf-aQb" secondAttribute="centerX" id="xwh-CK-Yc1"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageViewArticlePhoto" destination="Y9C-Ka-bnm" id="XZT-Lh-uNW"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="VlL-vq-lnY" id="pUd-1f-wLT"/>
+                            <outlet property="delegate" destination="VlL-vq-lnY" id="Pxs-rk-Syg"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9JA-g4-fvn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1114" y="819"/>
+            <point key="canvasLocation" x="1152" y="831"/>
         </scene>
     </scenes>
 </document>

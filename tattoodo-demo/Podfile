@@ -12,10 +12,12 @@ end
 
 target 'tattoodo-demo' do
 	generic_pods
+	pod 'MMParallaxCell'
 	pod 'Popsicle'
 	pod 'CHTCollectionViewWaterfallLayout'
 	pod 'MPParallaxView'
-	pod 'RMPZoomTransitionAnimator'
+	pod 'DGElasticPullToRefresh'
+	pod 'CSStickyHeaderFlowLayout'
 	pod 'Kingfisher'
 	pod 'AMScrollingNavbar'
 	pod 'M13ProgressSuite'
