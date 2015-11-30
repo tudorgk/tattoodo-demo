@@ -142,10 +142,7 @@ class TDAppDataCollectionViewController: UICollectionViewController, CHTCollecti
 	//** Size for the cells in the Waterfall Layout */
 	func collectionView(collectionView: UICollectionView!, layout collectionViewLayout: UICollectionViewLayout!, sizeForItemAtIndexPath indexPath: NSIndexPath!) -> CGSize {
 		
-		// create a cell size from the image size, and return the size
-		//		let imageSize = model.images[indexPath.row].size
-		//		let imageSize = 10;
-		
+
 		return (self.dataSource.articlesArray.objectAtIndex(indexPath.row).objectForKey("image_file") as! UIImage).size
 	}
 	
@@ -154,10 +151,6 @@ class TDAppDataCollectionViewController: UICollectionViewController, CHTCollecti
 		let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! ImageUICollectionViewCell
 		self.selectedIndexParth = indexPath
 		
-		/*
-		let articleDetailVC : TDArticleDetailCollectionViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("articleDetailVC") as! TDArticleDetailCollectionViewController
-		articleDetailVC.articleData = NSMutableDictionary(dictionary: (self.dataSource.articlesArray.objectAtIndex(indexPath.row) as? NSMutableDictionary)!)
-		*/
 		let articleDetailVC : TDArticleDetailTableViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("articleDetailTableVC") as! TDArticleDetailTableViewController
 		articleDetailVC.articleData = NSMutableDictionary(dictionary: (self.dataSource.articlesArray.objectAtIndex(indexPath.row) as? NSMutableDictionary)!)
 		

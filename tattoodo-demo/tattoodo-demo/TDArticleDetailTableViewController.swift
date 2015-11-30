@@ -99,5 +99,18 @@ class TDArticleDetailTableViewController: UITableViewController {
 	override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
 		return 200;
 	}
+	
+	override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+		let articleElement :NSDictionary = (((self.articleData!["content"] as! NSMutableArray)).objectAtIndex(indexPath.row) as! NSDictionary)
+		
+		if(articleElement["type"] as? String == "text"){
+			
+			let cell = tableView.cellForRowAtIndexPath(indexPath)
+			
+			return 150
+		}else{
+			return 200
+		}
+	}
 
 }

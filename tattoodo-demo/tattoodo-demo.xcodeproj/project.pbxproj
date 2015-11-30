@@ -15,7 +15,6 @@
 		0524F1011C0CDBE90039027E /* MediaAccessibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0524F0FD1C0CDBE90039027E /* MediaAccessibility.framework */; };
 		0524F1021C0CDBE90039027E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0524F0FE1C0CDBE90039027E /* MediaPlayer.framework */; };
 		0524F1031C0CDBE90039027E /* MediaToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0524F0FF1C0CDBE90039027E /* MediaToolbox.framework */; };
-		0524F1051C0CDD0D0039027E /* TDYoutubeWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0524F1041C0CDD0D0039027E /* TDYoutubeWebView.swift */; };
 		0560350E1C063DCD00FE1EBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0560350D1C063DCD00FE1EBA /* AppDelegate.swift */; };
 		056035101C063DCD00FE1EBA /* TDAppDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0560350F1C063DCD00FE1EBA /* TDAppDataTableViewController.swift */; };
 		056035131C063DCD00FE1EBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056035111C063DCD00FE1EBA /* Main.storyboard */; };
@@ -82,7 +81,6 @@
 		0524F0FD1C0CDBE90039027E /* MediaAccessibility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaAccessibility.framework; path = System/Library/Frameworks/MediaAccessibility.framework; sourceTree = SDKROOT; };
 		0524F0FE1C0CDBE90039027E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		0524F0FF1C0CDBE90039027E /* MediaToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaToolbox.framework; path = System/Library/Frameworks/MediaToolbox.framework; sourceTree = SDKROOT; };
-		0524F1041C0CDD0D0039027E /* TDYoutubeWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDYoutubeWebView.swift; sourceTree = "<group>"; };
 		0560350A1C063DCD00FE1EBA /* tattoodo-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tattoodo-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0560350D1C063DCD00FE1EBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0560350F1C063DCD00FE1EBA /* TDAppDataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDAppDataTableViewController.swift; sourceTree = "<group>"; };
@@ -229,7 +227,6 @@
 				05EF2C651C0B652C006CD4A5 /* Navigation Controller */,
 				05EF2C341C09B8F9006CD4A5 /* TDAppDataCollectionViewController.swift */,
 				05EF2C641C0B6524006CD4A5 /* Detail View Controllers */,
-				0524F1041C0CDD0D0039027E /* TDYoutubeWebView.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -597,7 +594,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				056035101C063DCD00FE1EBA /* TDAppDataTableViewController.swift in Sources */,
-				0524F1051C0CDD0D0039027E /* TDYoutubeWebView.swift in Sources */,
 				0560350E1C063DCD00FE1EBA /* AppDelegate.swift in Sources */,
 				05EF2C6B1C0B6634006CD4A5 /* TDArticleDetailImageTableViewCell.swift in Sources */,
 				05EF2C631C0B56F6006CD4A5 /* TDArticleDetailImageCollectionViewCell.swift in Sources */,
