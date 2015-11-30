@@ -13,6 +13,7 @@ end
 target 'tattoodo-demo' do
 	generic_pods
 	pod 'MMParallaxCell'
+	pod "XCDYouTubeKit", "~> 2.4.1"
 	pod 'Popsicle'
 	pod 'CHTCollectionViewWaterfallLayout'
 	pod 'MPParallaxView'

@@ -22,6 +22,7 @@ PODS:
   - Popsicle (2.0.0)
   - Shimmer (1.0.2)
   - SnapKit (0.18.0)
+  - XCDYouTubeKit (2.4.1)
 
 DEPENDENCIES:
   - Alamofire
@@ -42,6 +43,7 @@ DEPENDENCIES:
   - Popsicle
   - Shimmer
   - SnapKit
+  - XCDYouTubeKit (~> 2.4.1)
 
 SPEC CHECKSUMS:
   Alamofire: 9f93b56389e48def9220dd57d1f44b1927229a5a
@@ -62,5 +64,6 @@ SPEC CHECKSUMS:
   Popsicle: 7f7c1592c951141b13470d3ff04723122a4e4b76
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
   SnapKit: e1f090a6d47b1dd4bd89b73f72b6746a7835ef3c
+  XCDYouTubeKit: 5a984314fc2b16418ccb954954afadc77b5e6f06
 
 COCOAPODS: 0.39.0

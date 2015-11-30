@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0524F0F51C0CD17E0039027E /* TDArticleDetailYoutubeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0524F0F41C0CD17E0039027E /* TDArticleDetailYoutubeTableViewCell.swift */; };
+		0524F0F91C0CDBAA0039027E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0524F0F61C0CDBAA0039027E /* AVFoundation.framework */; };
+		0524F0FA1C0CDBAA0039027E /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0524F0F71C0CDBAA0039027E /* AVKit.framework */; };
+		0524F0FB1C0CDBAA0039027E /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0524F0F81C0CDBAA0039027E /* CoreVideo.framework */; };
+		0524F1001C0CDBE90039027E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0524F0FC1C0CDBE90039027E /* CoreMedia.framework */; };
+		0524F1011C0CDBE90039027E /* MediaAccessibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0524F0FD1C0CDBE90039027E /* MediaAccessibility.framework */; };
+		0524F1021C0CDBE90039027E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0524F0FE1C0CDBE90039027E /* MediaPlayer.framework */; };
+		0524F1031C0CDBE90039027E /* MediaToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0524F0FF1C0CDBE90039027E /* MediaToolbox.framework */; };
+		0524F1051C0CDD0D0039027E /* TDYoutubeWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0524F1041C0CDD0D0039027E /* TDYoutubeWebView.swift */; };
 		0560350E1C063DCD00FE1EBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0560350D1C063DCD00FE1EBA /* AppDelegate.swift */; };
 		056035101C063DCD00FE1EBA /* TDAppDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0560350F1C063DCD00FE1EBA /* TDAppDataTableViewController.swift */; };
 		056035131C063DCD00FE1EBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056035111C063DCD00FE1EBA /* Main.storyboard */; };
@@ -65,6 +74,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0524F0F41C0CD17E0039027E /* TDArticleDetailYoutubeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDArticleDetailYoutubeTableViewCell.swift; sourceTree = "<group>"; };
+		0524F0F61C0CDBAA0039027E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0524F0F71C0CDBAA0039027E /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		0524F0F81C0CDBAA0039027E /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		0524F0FC1C0CDBE90039027E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0524F0FD1C0CDBE90039027E /* MediaAccessibility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaAccessibility.framework; path = System/Library/Frameworks/MediaAccessibility.framework; sourceTree = SDKROOT; };
+		0524F0FE1C0CDBE90039027E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		0524F0FF1C0CDBE90039027E /* MediaToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaToolbox.framework; path = System/Library/Frameworks/MediaToolbox.framework; sourceTree = SDKROOT; };
+		0524F1041C0CDD0D0039027E /* TDYoutubeWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDYoutubeWebView.swift; sourceTree = "<group>"; };
 		0560350A1C063DCD00FE1EBA /* tattoodo-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tattoodo-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0560350D1C063DCD00FE1EBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0560350F1C063DCD00FE1EBA /* TDAppDataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDAppDataTableViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +132,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0524F1001C0CDBE90039027E /* CoreMedia.framework in Frameworks */,
+				0524F1011C0CDBE90039027E /* MediaAccessibility.framework in Frameworks */,
+				0524F1021C0CDBE90039027E /* MediaPlayer.framework in Frameworks */,
+				0524F1031C0CDBE90039027E /* MediaToolbox.framework in Frameworks */,
+				0524F0F91C0CDBAA0039027E /* AVFoundation.framework in Frameworks */,
+				0524F0FA1C0CDBAA0039027E /* AVKit.framework in Frameworks */,
+				0524F0FB1C0CDBAA0039027E /* CoreVideo.framework in Frameworks */,
 				28407A1BDA679AF51AFA4B5B /* Pods_tattoodo_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,6 +229,7 @@
 				05EF2C651C0B652C006CD4A5 /* Navigation Controller */,
 				05EF2C341C09B8F9006CD4A5 /* TDAppDataCollectionViewController.swift */,
 				05EF2C641C0B6524006CD4A5 /* Detail View Controllers */,
+				0524F1041C0CDD0D0039027E /* TDYoutubeWebView.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -276,6 +302,7 @@
 			isa = PBXGroup;
 			children = (
 				05EF2C601C0B3189006CD4A5 /* TDArticleDetailTextCollectionViewCell.swift */,
+				0524F0F41C0CD17E0039027E /* TDArticleDetailYoutubeTableViewCell.swift */,
 				05EF2C621C0B56F6006CD4A5 /* TDArticleDetailImageCollectionViewCell.swift */,
 				05EF2C681C0B6626006CD4A5 /* TDArticleDetailTextTableViewCell.swift */,
 				05EF2C6A1C0B6634006CD4A5 /* TDArticleDetailImageTableViewCell.swift */,
@@ -322,6 +349,13 @@
 		9EC8FF85187A3E2CCF32BF7C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0524F0FC1C0CDBE90039027E /* CoreMedia.framework */,
+				0524F0FD1C0CDBE90039027E /* MediaAccessibility.framework */,
+				0524F0FE1C0CDBE90039027E /* MediaPlayer.framework */,
+				0524F0FF1C0CDBE90039027E /* MediaToolbox.framework */,
+				0524F0F61C0CDBAA0039027E /* AVFoundation.framework */,
+				0524F0F71C0CDBAA0039027E /* AVKit.framework */,
+				0524F0F81C0CDBAA0039027E /* CoreVideo.framework */,
 				E52ED8021CE26932AFCDCD29 /* Pods_tattoodo_demo.framework */,
 				95D374625FBB63F5468F5BDB /* Pods_tattoodo_demoTests.framework */,
 			);
@@ -563,6 +597,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				056035101C063DCD00FE1EBA /* TDAppDataTableViewController.swift in Sources */,
+				0524F1051C0CDD0D0039027E /* TDYoutubeWebView.swift in Sources */,
 				0560350E1C063DCD00FE1EBA /* AppDelegate.swift in Sources */,
 				05EF2C6B1C0B6634006CD4A5 /* TDArticleDetailImageTableViewCell.swift in Sources */,
 				05EF2C631C0B56F6006CD4A5 /* TDArticleDetailImageCollectionViewCell.swift in Sources */,
@@ -571,6 +606,7 @@
 				05EF2C5D1C0B23F2006CD4A5 /* TDCollectionParallaxHeader.swift in Sources */,
 				05EF2C551C0A1BA0006CD4A5 /* TDArticleDetailCollectionViewController.swift in Sources */,
 				05EF2C3B1C09BAEE006CD4A5 /* ImageUICollectionViewCell.swift in Sources */,
+				0524F0F51C0CD17E0039027E /* TDArticleDetailYoutubeTableViewCell.swift in Sources */,
 				05EF2C571C0B0BE2006CD4A5 /* TDCustomNavigationAnimationController.swift in Sources */,
 				05EF2C671C0B65B3006CD4A5 /* TDArticleDetailTableViewController.swift in Sources */,
 				05EF2C351C09B8F9006CD4A5 /* TDAppDataCollectionViewController.swift in Sources */,

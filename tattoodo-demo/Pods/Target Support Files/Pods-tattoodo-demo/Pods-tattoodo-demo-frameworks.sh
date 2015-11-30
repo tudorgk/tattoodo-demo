@@ -101,6 +101,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-tattoodo-demo/Popsicle.framework"
   install_framework "Pods-tattoodo-demo/Shimmer.framework"
   install_framework "Pods-tattoodo-demo/SnapKit.framework"
+  install_framework "Pods-tattoodo-demo/XCDYouTubeKit.framework"
   install_framework "Pods-tattoodo-demo/pop.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -121,5 +122,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-tattoodo-demo/Popsicle.framework"
   install_framework "Pods-tattoodo-demo/Shimmer.framework"
   install_framework "Pods-tattoodo-demo/SnapKit.framework"
+  install_framework "Pods-tattoodo-demo/XCDYouTubeKit.framework"
   install_framework "Pods-tattoodo-demo/pop.framework"
 fi

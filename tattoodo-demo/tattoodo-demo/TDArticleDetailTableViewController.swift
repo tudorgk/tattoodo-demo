@@ -8,18 +8,21 @@
 
 import UIKit
 import Kingfisher
+import XCDYouTubeKit
 class TDArticleDetailTableViewController: UITableViewController {
 
 	@IBOutlet weak var imageViewFeaturedImage: UIImageView!
 	var articleData : NSMutableDictionary?
 	let placeHolderImage : UIImage = UIImage(named: "placeholder1")!
 	
+	var cachedCells : NSMutableDictionary = NSMutableDictionary()
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 		
 		self.tableView.delegate = self
 		self.tableView.dataSource = self
-		self.tableView.rowHeight = UITableViewAutomaticDimension
+		self.tableView.rowHeight = 200
 		self.tableView.estimatedRowHeight = 160.0
 		self.tableView.scrollEnabled = true
 		self.title = self.articleData!["title"] as? String
@@ -44,43 +47,57 @@ class TDArticleDetailTableViewController: UITableViewController {
 		
 		let articleElement :NSDictionary = (((self.articleData!["content"] as! NSMutableArray)).objectAtIndex(indexPath.row) as! NSDictionary)
  
+		let cachedCell : UITableViewCell? = self.cachedCells.objectForKey(indexPath) as? UITableViewCell
+		
+		if (cachedCell != nil){
+			return cachedCell!
+		}else{
+		
 		if(articleElement["type"] as? String == "text"){
 		
+
+			
 			let cell :TDArticleDetailTextTableViewCell = (tableView.dequeueReusableCellWithIdentifier("textCell", forIndexPath: indexPath) as? TDArticleDetailTextTableViewCell)!
 
 			cell.labelArticleText!.text = articleElement["content"] as? String
 
+			cell.layoutIfNeeded()
+			
+			cachedCells[indexPath] = cell;
+			
         return cell
 			
-		}else{
+		}else if(articleElement["type"] as? String == "image"){
 			let cell :TDArticleDetailImageTableViewCell = (tableView.dequeueReusableCellWithIdentifier("imageCell", forIndexPath: indexPath) as? TDArticleDetailImageTableViewCell)!
 			
-			cell.imageViewArticleImage.kf_setImageWithURL(NSURL(string:
-				((((self.articleData!["content"] as! NSMutableArray))
-					.objectAtIndex(indexPath.row) as! NSDictionary)
-					.objectForKey("image_url") as! String))!,placeholderImage: self.placeHolderImage)
+			if (articleElement["image_file"] == nil){
+				cell.imageViewArticleImage.kf_setImageWithURL(NSURL(string:
+					((((self.articleData!["content"] as! NSMutableArray))
+						.objectAtIndex(indexPath.row) as! NSDictionary)
+						.objectForKey("image_url") as! String))!,placeholderImage: self.placeHolderImage)
+			}
 			
+			cell.layoutIfNeeded()
 			
+			cachedCells[indexPath] = cell;
+
 			return cell
+		}else {
+			let cell :TDArticleDetailYoutubeTableViewCell = (tableView.dequeueReusableCellWithIdentifier("videoCell", forIndexPath: indexPath) as? TDArticleDetailYoutubeTableViewCell)!
+			let videoPlayerVC : XCDYouTubeVideoPlayerViewController = XCDYouTubeVideoPlayerViewController(videoIdentifier: (articleElement["video_url"] as? String)?.componentsSeparatedByString("v=")[1])
+			videoPlayerVC.presentInView(cell.youtubePlayerView)
+			videoPlayerVC.moviePlayer.play()
+			
+			cachedCells[indexPath] = cell;
+
+			
+			return cell;
 		}
-	
+		}
 	}
 	
 	override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
 		return 200;
 	}
-/*
-	override func scrollViewDidScroll(scrollView: UIScrollView) {
-		// Get visible cells on table view.
-		
-		let visibleCells = self.tableView.visibleCells
-		for cell in visibleCells {
-			if cell.isKindOfClass(TDArticleDetailImageTableViewCell) {
-				(cell as! TDArticleDetailImageTableViewCell).cellOnTableViewDidScrollOnView(tableView, view: self.view)
-			}
-		}
-	}
-
-*/
 
 }
